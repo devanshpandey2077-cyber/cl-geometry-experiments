@@ -1,0 +1,94 @@
+#!/bin/bash
+#PBS -N h2_gpu_smoke
+#PBS -q workq
+#PBS -l select=1:ncpus=4:ngpus=1:mem=32gb
+#PBS -l walltime=00:30:00
+#PBS -j oe
+
+set -e
+: "${PBS_JOBID:?Submit this script using qsub}"
+
+cd /Data4/YOUR_HPC_USER
+exec > "gpu_${PBS_JOBID}.log" 2>&1
+
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate h2_h100
+
+export PYTHONNOUSERSITE=1
+export OMP_NUM_THREADS=4
+export MKL_NUM_THREADS=4
+export TOKENIZERS_PARALLELISM=false
+export HF_HOME="/Data4/YOUR_HPC_USER/.hf_cache"
+export HF_HUB_OFFLINE=1
+
+# Preserve a scheduler-provided selection.
+# Otherwise use the candidate identified from the manual's workflow.
+if [ -z "${CUDA_VISIBLE_DEVICES:-}" ]; then
+    export CUDA_VISIBLE_DEVICES="MIG-98a11fbb-7fcd-5fc9-b30f-f199445f5ddb"
+fi
+
+echo "Job: $PBS_JOBID"
+echo "Host: $(hostname)"
+echo "Python: $(command -v python)"
+echo "GPU selection: $CUDA_VISIBLE_DEVICES"
+
+python -u - <<'PY'
+import os
+import runpy
+import sys
+import pynvml
+
+uuid = os.environ["CUDA_VISIBLE_DEVICES"]
+if not uuid.startswith("MIG-") or "," in uuid:
+    raise RuntimeError(
+        "Expected one MIG UUID. Stop here and check the PBS GPU mapping."
+    )
+
+# Inspect occupancy before creating our own CUDA context.
+pynvml.nvmlInit()
+try:
+    handle = pynvml.nvmlDeviceGetHandleByUUID(uuid)
+    processes = pynvml.nvmlDeviceGetComputeRunningProcesses(handle)
+    if processes:
+        raise RuntimeError(
+            "Selected MIG instance is occupied. Training was not started."
+        )
+finally:
+    pynvml.nvmlShutdown()
+
+import torch
+
+print("PyTorch:", torch.__version__, flush=True)
+print("CUDA build:", torch.version.cuda, flush=True)
+
+if not torch.cuda.is_available():
+    raise RuntimeError("CUDA is unavailable. Training was not started.")
+
+if torch.cuda.device_count() != 1:
+    raise RuntimeError("Expected exactly one visible GPU instance.")
+
+props = torch.cuda.get_device_properties(0)
+print("GPU:", props.name, flush=True)
+print("GPU memory GiB:", round(props.total_memory / 1024**3, 2), flush=True)
+
+x = torch.randn(256, 256, device="cuda")
+y = x @ x
+torch.cuda.synchronize()
+print("GPU COMPUTATION PASSED", flush=True)
+
+output = "runs/h100_smoke_" + os.environ["PBS_JOBID"]
+sys.argv = [
+    "train_and_probe.py",
+    "--model", "/Data4/YOUR_HPC_USER/.hf_cache/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "--data", "data_h100_smoke",
+    "--output", output,
+    "--max-steps", "20",
+    "--probes", "30",
+    "--eval-limit", "50",
+]
+
+runpy.run_path("train_and_probe.py", run_name="__main__")
+
+print("TRAINING COMPLETE", flush=True)
+print("Results:", output, flush=True)
+PY

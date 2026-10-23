@@ -1,0 +1,217 @@
+{
+  "seed": 42,
+  "requested": {
+    "train": 100,
+    "validation": 20,
+    "probe": 30,
+    "test": 50
+  },
+  "tasks": {
+    "sst2": {
+      "source": "nyu-mll/glue",
+      "config": "sst2",
+      "actual": {
+        "train": {
+          "size": 100,
+          "label_counts": {
+            "1": 50,
+            "0": 50
+          }
+        },
+        "validation": {
+          "size": 20,
+          "label_counts": {
+            "0": 10,
+            "1": 10
+          }
+        },
+        "probe": {
+          "size": 30,
+          "label_counts": {
+            "1": 15,
+            "0": 15
+          }
+        },
+        "test": {
+          "size": 50,
+          "label_counts": {
+            "1": 25,
+            "0": 25
+          }
+        }
+      },
+      "label_tokens": {
+        "0": "A",
+        "1": "B"
+      }
+    },
+    "qqp": {
+      "source": "nyu-mll/glue",
+      "config": "qqp",
+      "actual": {
+        "train": {
+          "size": 100,
+          "label_counts": {
+            "0": 50,
+            "1": 50
+          }
+        },
+        "validation": {
+          "size": 20,
+          "label_counts": {
+            "0": 10,
+            "1": 10
+          }
+        },
+        "probe": {
+          "size": 30,
+          "label_counts": {
+            "1": 15,
+            "0": 15
+          }
+        },
+        "test": {
+          "size": 50,
+          "label_counts": {
+            "0": 25,
+            "1": 25
+          }
+        }
+      },
+      "label_tokens": {
+        "0": "A",
+        "1": "B"
+      }
+    },
+    "qnli": {
+      "source": "nyu-mll/glue",
+      "config": "qnli",
+      "actual": {
+        "train": {
+          "size": 100,
+          "label_counts": {
+            "1": 50,
+            "0": 50
+          }
+        },
+        "validation": {
+          "size": 20,
+          "label_counts": {
+            "0": 10,
+            "1": 10
+          }
+        },
+        "probe": {
+          "size": 30,
+          "label_counts": {
+            "1": 15,
+            "0": 15
+          }
+        },
+        "test": {
+          "size": 50,
+          "label_counts": {
+            "0": 25,
+            "1": 25
+          }
+        }
+      },
+      "label_tokens": {
+        "0": "A",
+        "1": "B"
+      }
+    },
+    "mnli": {
+      "source": "nyu-mll/glue",
+      "config": "mnli",
+      "actual": {
+        "train": {
+          "size": 100,
+          "label_counts": {
+            "2": 33,
+            "1": 33,
+            "0": 34
+          }
+        },
+        "validation": {
+          "size": 20,
+          "label_counts": {
+            "1": 7,
+            "0": 7,
+            "2": 6
+          }
+        },
+        "probe": {
+          "size": 30,
+          "label_counts": {
+            "1": 10,
+            "0": 10,
+            "2": 10
+          }
+        },
+        "test": {
+          "size": 50,
+          "label_counts": {
+            "2": 16,
+            "1": 17,
+            "0": 17
+          }
+        }
+      },
+      "label_tokens": {
+        "0": "A",
+        "1": "B",
+        "2": "C"
+      }
+    },
+    "ag_news": {
+      "source": "fancyzhx/ag_news",
+      "config": null,
+      "actual": {
+        "train": {
+          "size": 100,
+          "label_counts": {
+            "3": 25,
+            "2": 25,
+            "0": 25,
+            "1": 25
+          }
+        },
+        "validation": {
+          "size": 20,
+          "label_counts": {
+            "0": 5,
+            "2": 5,
+            "1": 5,
+            "3": 5
+          }
+        },
+        "probe": {
+          "size": 30,
+          "label_counts": {
+            "0": 8,
+            "3": 7,
+            "1": 8,
+            "2": 7
+          }
+        },
+        "test": {
+          "size": 50,
+          "label_counts": {
+            "2": 12,
+            "0": 13,
+            "1": 13,
+            "3": 12
+          }
+        }
+      },
+      "label_tokens": {
+        "0": "A",
+        "1": "B",
+        "2": "C",
+        "3": "D"
+      }
+    }
+  },
+  "warning": "These are custom splits of public labeled training data, NOT official benchmark test scores. No cross-task near-duplicate guarantee."
+}

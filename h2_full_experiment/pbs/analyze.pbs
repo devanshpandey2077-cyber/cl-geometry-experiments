@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -N h2_analysis
+#PBS -q cpuq
+#PBS -l select=1:ncpus=8:mem=32gb
+#PBS -l walltime=24:00:00
+#PBS -j oe
+H2_LOG_KIND=analysis H2_THREADS=8
+source "$PBS_O_WORKDIR/pbs/common.sh"
+export CUDA_VISIBLE_DEVICES="" HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
+args=(--campaign "${H2_CAMPAIGN:-first_smoke}")
+if [[ -n "${H2_BOOTSTRAP:-}" ]]; then args+=(--bootstrap "$H2_BOOTSTRAP"); fi
+if [[ -n "${H2_PROBE:-}" ]]; then args+=(--probe "$H2_PROBE"); fi
+if [[ -n "${H2_RANK:-}" ]]; then args+=(--rank "$H2_RANK"); fi
+if [[ -n "${H2_POOLING:-}" ]]; then args+=(--pooling "$H2_POOLING"); fi
+if [[ -n "${H2_LAYER:-}" ]]; then args+=(--layer "$H2_LAYER"); fi
+if [[ "${H2_ALLOW_INCOMPLETE:-0}" == 1 ]]; then args+=(--allow-incomplete); fi
+python -m h2.analyze "${args[@]}"

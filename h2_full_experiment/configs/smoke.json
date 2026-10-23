@@ -1,0 +1,36 @@
+{
+  "extends": "full.json",
+  "name": "smoke",
+  "purpose": "functionality",
+  "data": {
+    "partition": "development",
+    "name": "h2_v2_smoke",
+    "sizes": {
+      "train": 100,
+      "validation": 20,
+      "probe_a": 40,
+      "probe_b": 40,
+      "test": 50
+    }
+  },
+  "training": {
+    "epochs": 2,
+    "max_steps_per_task": 20,
+    "max_length": 256,
+    "eval_splits": [
+      "validation",
+      "test"
+    ]
+  },
+  "analysis": {
+    "rank": 8,
+    "sensitivity_ranks": [
+      4,
+      12
+    ],
+    "bootstrap": 40
+  },
+  "seeds": [
+    101
+  ]
+}

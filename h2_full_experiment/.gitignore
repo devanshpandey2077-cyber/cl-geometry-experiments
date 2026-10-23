@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+settings.env
+assets/
+data/
+runs/
+reports/
+logs/
+campaigns/
+*.o[0-9]*
+*.e[0-9]*
+h2-test-*/
+h2-submit-*/

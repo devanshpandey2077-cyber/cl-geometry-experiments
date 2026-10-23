@@ -1,0 +1,57 @@
+Job: 36125.master
+Host: master
+Python: /Data4/YOUR_HPC_USER/.conda/envs/h2_h100/bin/python
+GPU selection: MIG-98a11fbb-7fcd-5fc9-b30f-f199445f5ddb
+PyTorch: 2.14.1+cu130
+CUDA build: 13.0
+GPU: NVIDIA H100 PCIe MIG 3g.40gb
+GPU memory GiB: 39.5
+GPU COMPUTATION PASSED
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 311/311 [00:00<00:00, 9363.23it/s]
+Device: cuda layers: [6, 14, 22]
+Probed 0 sst2 30
+Probed 0 qqp 30
+Probed 0 qnli 30
+Probed 0 mnli 30
+Probed 0 ag_news 30
+Training task sst2
+Evaluation 1 {'sst2': 0.92}
+Probed 1 sst2 30
+Probed 1 qqp 30
+Probed 1 qnli 30
+Probed 1 mnli 30
+Probed 1 ag_news 30
+Training task qqp
+Evaluation 2 {'sst2': 0.8, 'qqp': 0.82}
+Probed 2 sst2 30
+Probed 2 qqp 30
+Probed 2 qnli 30
+Probed 2 mnli 30
+Probed 2 ag_news 30
+Training task qnli
+Evaluation 3 {'sst2': 0.9, 'qqp': 0.88, 'qnli': 0.82}
+Probed 3 sst2 30
+Probed 3 qqp 30
+Probed 3 qnli 30
+Probed 3 mnli 30
+Probed 3 ag_news 30
+Training task mnli
+Evaluation 4 {'sst2': 0.94, 'qqp': 0.72, 'qnli': 0.76, 'mnli': 0.72}
+Probed 4 sst2 30
+Probed 4 qqp 30
+Probed 4 qnli 30
+Probed 4 mnli 30
+Probed 4 ag_news 30
+Training task ag_news
+Evaluation 5 {'sst2': 0.92, 'qqp': 0.74, 'qnli': 0.76, 'mnli': 0.68, 'ag_news': 0.7}
+Probed 5 sst2 30
+Probed 5 qqp 30
+Probed 5 qnli 30
+Probed 5 mnli 30
+Probed 5 ag_news 30
+Finished: runs/h100_smoke_36125.master
+TRAINING COMPLETE
+Results: runs/h100_smoke_36125.master

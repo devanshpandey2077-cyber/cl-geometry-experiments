@@ -1,0 +1,46 @@
+{
+  "extends": "full.json",
+  "name": "paws_replication",
+  "purpose": "replication",
+  "data": {
+    "name": "h2_v2_paws",
+    "tasks": [
+      "yelp",
+      "paws",
+      "qnli",
+      "mnli",
+      "ag_news"
+    ],
+    "seed": 20261021,
+    "sizes": {
+      "train": 5000,
+      "validation": 500,
+      "probe_a": 500,
+      "probe_b": 500,
+      "test": 1000
+    }
+  },
+  "orders": {
+    "O1": [
+      "yelp",
+      "paws",
+      "qnli",
+      "mnli",
+      "ag_news"
+    ],
+    "O2": [
+      "ag_news",
+      "mnli",
+      "qnli",
+      "paws",
+      "yelp"
+    ],
+    "O3": [
+      "qnli",
+      "yelp",
+      "ag_news",
+      "paws",
+      "mnli"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+# Local credentials and machine settings
+.env
+.env.*
+!.env.example
+**/settings.env
+**/credentials*
+**/auth.json
+*.pem
+*.key
+
+# Generated data, model assets and caches
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+**/.hf_cache/
+**/data/
+**/assets/
+**/runs/
+**/reports/
+**/logs/
+**/checkpoints/
+*.npy
+*.npz
+*.safetensors
+*.pt
+*.pth
+*.bin

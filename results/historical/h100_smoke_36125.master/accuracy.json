@@ -1,0 +1,67 @@
+[
+  {
+    "stage": 1,
+    "trained": [
+      "sst2"
+    ],
+    "accuracy": {
+      "sst2": 0.92
+    }
+  },
+  {
+    "stage": 2,
+    "trained": [
+      "sst2",
+      "qqp"
+    ],
+    "accuracy": {
+      "sst2": 0.8,
+      "qqp": 0.82
+    }
+  },
+  {
+    "stage": 3,
+    "trained": [
+      "sst2",
+      "qqp",
+      "qnli"
+    ],
+    "accuracy": {
+      "sst2": 0.9,
+      "qqp": 0.88,
+      "qnli": 0.82
+    }
+  },
+  {
+    "stage": 4,
+    "trained": [
+      "sst2",
+      "qqp",
+      "qnli",
+      "mnli"
+    ],
+    "accuracy": {
+      "sst2": 0.94,
+      "qqp": 0.72,
+      "qnli": 0.76,
+      "mnli": 0.72
+    }
+  },
+  {
+    "stage": 5,
+    "trained": [
+      "sst2",
+      "qqp",
+      "qnli",
+      "mnli",
+      "ag_news"
+    ],
+    "accuracy": {
+      "sst2": 0.92,
+      "qqp": 0.74,
+      "qnli": 0.76,
+      "mnli": 0.68,
+      "ag_news": 0.7
+    }
+  }
+]

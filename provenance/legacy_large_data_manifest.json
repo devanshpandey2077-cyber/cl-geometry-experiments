@@ -1,0 +1,217 @@
+{
+  "seed": 42,
+  "requested": {
+    "train": 50000,
+    "validation": 2000,
+    "probe": 2000,
+    "test": 5000
+  },
+  "tasks": {
+    "sst2": {
+      "source": "nyu-mll/glue",
+      "config": "sst2",
+      "actual": {
+        "train": {
+          "size": 50000,
+          "label_counts": {
+            "0": 25000,
+            "1": 25000
+          }
+        },
+        "validation": {
+          "size": 2000,
+          "label_counts": {
+            "0": 1000,
+            "1": 1000
+          }
+        },
+        "probe": {
+          "size": 2000,
+          "label_counts": {
+            "1": 1000,
+            "0": 1000
+          }
+        },
+        "test": {
+          "size": 5000,
+          "label_counts": {
+            "1": 2500,
+            "0": 2500
+          }
+        }
+      },
+      "label_tokens": {
+        "0": "A",
+        "1": "B"
+      }
+    },
+    "qqp": {
+      "source": "nyu-mll/glue",
+      "config": "qqp",
+      "actual": {
+        "train": {
+          "size": 50000,
+          "label_counts": {
+            "0": 25000,
+            "1": 25000
+          }
+        },
+        "validation": {
+          "size": 2000,
+          "label_counts": {
+            "0": 1000,
+            "1": 1000
+          }
+        },
+        "probe": {
+          "size": 2000,
+          "label_counts": {
+            "0": 1000,
+            "1": 1000
+          }
+        },
+        "test": {
+          "size": 5000,
+          "label_counts": {
+            "0": 2500,
+            "1": 2500
+          }
+        }
+      },
+      "label_tokens": {
+        "0": "A",
+        "1": "B"
+      }
+    },
+    "qnli": {
+      "source": "nyu-mll/glue",
+      "config": "qnli",
+      "actual": {
+        "train": {
+          "size": 50000,
+          "label_counts": {
+            "0": 25000,
+            "1": 25000
+          }
+        },
+        "validation": {
+          "size": 2000,
+          "label_counts": {
+            "1": 1000,
+            "0": 1000
+          }
+        },
+        "probe": {
+          "size": 2000,
+          "label_counts": {
+            "1": 1000,
+            "0": 1000
+          }
+        },
+        "test": {
+          "size": 5000,
+          "label_counts": {
+            "0": 2500,
+            "1": 2500
+          }
+        }
+      },
+      "label_tokens": {
+        "0": "A",
+        "1": "B"
+      }
+    },
+    "mnli": {
+      "source": "nyu-mll/glue",
+      "config": "mnli",
+      "actual": {
+        "train": {
+          "size": 50000,
+          "label_counts": {
+            "0": 16667,
+            "1": 16667,
+            "2": 16666
+          }
+        },
+        "validation": {
+          "size": 2000,
+          "label_counts": {
+            "0": 667,
+            "2": 666,
+            "1": 667
+          }
+        },
+        "probe": {
+          "size": 2000,
+          "label_counts": {
+            "0": 667,
+            "1": 667,
+            "2": 666
+          }
+        },
+        "test": {
+          "size": 5000,
+          "label_counts": {
+            "0": 1667,
+            "1": 1667,
+            "2": 1666
+          }
+        }
+      },
+      "label_tokens": {
+        "0": "A",
+        "1": "B",
+        "2": "C"
+      }
+    },
+    "ag_news": {
+      "source": "fancyzhx/ag_news",
+      "config": null,
+      "actual": {
+        "train": {
+          "size": 50000,
+          "label_counts": {
+            "0": 12500,
+            "1": 12500,
+            "3": 12500,
+            "2": 12500
+          }
+        },
+        "validation": {
+          "size": 2000,
+          "label_counts": {
+            "3": 500,
+            "2": 500,
+            "0": 500,
+            "1": 500
+          }
+        },
+        "probe": {
+          "size": 2000,
+          "label_counts": {
+            "2": 500,
+            "1": 500,
+            "0": 500,
+            "3": 500
+          }
+        },
+        "test": {
+          "size": 5000,
+          "label_counts": {
+            "3": 1250,
+            "1": 1250,
+            "0": 1250,
+            "2": 1250
+          }
+        }
+      },
+      "label_tokens": {
+        "0": "A",
+        "1": "B",
+        "2": "C",
+        "3": "D"
+      }
+    }
+  },
+  "warning": "These are custom splits of public labeled training data, NOT official benchmark test scores. No cross-task near-duplicate guarantee."
+}

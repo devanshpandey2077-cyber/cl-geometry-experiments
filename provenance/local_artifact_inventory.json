@@ -1,0 +1,2383 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-10-23",
+  "scope": "Original user-supplied local folders; content hashes before publication transformations.",
+  "files": [
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": ".gitignore",
+      "size_bytes": 122,
+      "original_sha256": "b808f2132bce4efacb37de9a7ca8d1f41be1e9d503ea1b3b872bcddc158b7a95",
+      "publication": "included",
+      "published_path": "h2_full_experiment/.gitignore",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "CHANGELOG.md",
+      "size_bytes": 1074,
+      "original_sha256": "9ef2ef6464118bc7e97c3715160267778957da0ff99da4f003b4f92dc863bafe",
+      "publication": "included",
+      "published_path": "h2_full_experiment/CHANGELOG.md",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "configs/calibration.json",
+      "size_bytes": 569,
+      "original_sha256": "b03e95a7eb81098b1c4082eef35d3dd9b84299dd8da7ddba9d3a011578e7a586",
+      "publication": "included",
+      "published_path": "h2_full_experiment/configs/calibration.json",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "configs/full.json",
+      "size_bytes": 2119,
+      "original_sha256": "586440fae3b59f0d8fbb4bd7bda42e9f6ed2c2463096c90e3248b5c63209f024",
+      "publication": "included",
+      "published_path": "h2_full_experiment/configs/full.json",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "configs/paws_replication.json",
+      "size_bytes": 667,
+      "original_sha256": "d0a9e301911fe7a7e274d596b8fca1500c24017640d0d4a50933089125867c15",
+      "publication": "included",
+      "published_path": "h2_full_experiment/configs/paws_replication.json",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "configs/smoke.json",
+      "size_bytes": 563,
+      "original_sha256": "5f967d3a2982aeda73bb9e2e52e2b869adeab4dd92098889d6fdcb55044c5b7a",
+      "publication": "included",
+      "published_path": "h2_full_experiment/configs/smoke.json",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "configs/smollm2.json",
+      "size_bytes": 227,
+      "original_sha256": "ec8140c6909d132084f72176b15cace1ad9f5fa4f208afef353c881ee8613b50",
+      "publication": "included",
+      "published_path": "h2_full_experiment/configs/smollm2.json",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "doctor.py",
+      "size_bytes": 1770,
+      "original_sha256": "e9236c8195d60ea70e778fbae45c6b050e35a393e351c830a92ac499e26b91f0",
+      "publication": "included",
+      "published_path": "h2_full_experiment/doctor.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "h2/__init__.py",
+      "size_bytes": 102,
+      "original_sha256": "a05d021f9561fed02827b7bdbb9ba0f8090e3274c20c6e793166841458093b21",
+      "publication": "included",
+      "published_path": "h2_full_experiment/h2/__init__.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "h2/analyze.py",
+      "size_bytes": 18397,
+      "original_sha256": "01099e6e8fba36906ad5d25cb462f8df541b276ce49aff2df42c5c77786d88d3",
+      "publication": "included",
+      "published_path": "h2_full_experiment/h2/analyze.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "h2/common.py",
+      "size_bytes": 4644,
+      "original_sha256": "c0750b1d0af1744c225e8b89485c36ce4b44ebd6c7c8487e3c962e5664f389f3",
+      "publication": "included",
+      "published_path": "h2_full_experiment/h2/common.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "h2/data.py",
+      "size_bytes": 11032,
+      "original_sha256": "99c8a5aea5902770049234405072b96e180cecf749fe47044240b50bfb8053f9",
+      "publication": "included",
+      "published_path": "h2_full_experiment/h2/data.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "h2/engine.py",
+      "size_bytes": 18247,
+      "original_sha256": "e7ed82786b2c1e4663876b5a23685af35c81cf46d24601ca78731371518f9a72",
+      "publication": "included",
+      "published_path": "h2_full_experiment/h2/engine.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "h2/geometry.py",
+      "size_bytes": 4770,
+      "original_sha256": "fd68c573f6e6452a8f521d1437a6d700d306631e3ef49d4e94d20ef28df499aa",
+      "publication": "included",
+      "published_path": "h2_full_experiment/h2/geometry.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "h2/gpu.py",
+      "size_bytes": 1552,
+      "original_sha256": "3decfd08fc1044b57a2feaf6f56aff5512fa4deaf8d0a7ad50800448c1606a5f",
+      "publication": "included",
+      "published_path": "h2_full_experiment/h2/gpu.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "h2/lora.py",
+      "size_bytes": 2819,
+      "original_sha256": "9fc0e56eda85af490adc7a2adf672da200b7e3985d7f0652c90116a0948f0983",
+      "publication": "included",
+      "published_path": "h2_full_experiment/h2/lora.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "h2/plotting.py",
+      "size_bytes": 2941,
+      "original_sha256": "7549af22574431163ee01784c8e03d96650d7dce5edc2d7bf9cc4afac6ea4c05",
+      "publication": "included",
+      "published_path": "h2_full_experiment/h2/plotting.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "h2/prepare.py",
+      "size_bytes": 7934,
+      "original_sha256": "72e7aae7e35248e4f89dfd7505596cf5bcfa656788a4987ac44d17274978ce52",
+      "publication": "included",
+      "published_path": "h2_full_experiment/h2/prepare.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "h2/prompts.py",
+      "size_bytes": 7033,
+      "original_sha256": "e75681620727ab8cea5442c36241a0fcbe134055a1676338201093e0087fba87",
+      "publication": "included",
+      "published_path": "h2_full_experiment/h2/prompts.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "h2/tasks.py",
+      "size_bytes": 1396,
+      "original_sha256": "b106e5853e4c85025a45958608d4f556b51dbb49c202e5ab5b5ff1f84e582a12",
+      "publication": "included",
+      "published_path": "h2_full_experiment/h2/tasks.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "pbs/analyze.pbs",
+      "size_bytes": 765,
+      "original_sha256": "e61054fbec6b55fc0fdef804d42767541eb0a0b8e2dfdebbf21b98d1d23be038",
+      "publication": "included",
+      "published_path": "h2_full_experiment/pbs/analyze.pbs",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "pbs/common.sh",
+      "size_bytes": 1015,
+      "original_sha256": "7971f729437d094170d8fc1620d9ef774cf5b4fdb330a2ba8ecfdc217f6df18e",
+      "publication": "included",
+      "published_path": "h2_full_experiment/pbs/common.sh",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "pbs/gpu.pbs",
+      "size_bytes": 646,
+      "original_sha256": "febdc9dece9730a4a7aa0c26ee44c780a796e891ae958bdc0f7e0d4b79503b82",
+      "publication": "included",
+      "published_path": "h2_full_experiment/pbs/gpu.pbs",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "pbs/prepare.pbs",
+      "size_bytes": 344,
+      "original_sha256": "b13cf279fa2eefd3c33dfdecbd7dfa727c9ea15481fec467f54a3d43863b5df1",
+      "publication": "included",
+      "published_path": "h2_full_experiment/pbs/prepare.pbs",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "pbs/setup.pbs",
+      "size_bytes": 458,
+      "original_sha256": "d02220689582d68eac4a900e84c1524d558840b84c8108f3798bea7c6bfd89c6",
+      "publication": "included",
+      "published_path": "h2_full_experiment/pbs/setup.pbs",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "PROTOCOL.md",
+      "size_bytes": 5879,
+      "original_sha256": "8450b10ad5046a4924b8de5f2451d7b9bd8f23e6c84ac18821c5025c94ce5211",
+      "publication": "included",
+      "published_path": "h2_full_experiment/PROTOCOL.md",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "README.md",
+      "size_bytes": 17056,
+      "original_sha256": "7b2b2f8024a252a362da3ef096af3371c7cc0f18df83a62b5c916b81e60e1ece",
+      "publication": "included",
+      "published_path": "h2_full_experiment/README.md",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "requirements.txt",
+      "size_bytes": 236,
+      "original_sha256": "f1a5415b9ba7f989d1bb32baec4f6b5f60f38dc10cd10e6d8ae4a30ef5684574",
+      "publication": "included",
+      "published_path": "h2_full_experiment/requirements.txt",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "settings.env.example",
+      "size_bytes": 367,
+      "original_sha256": "36dcc201bbf3f634bf976bb9b270938b6e0d33e53989b8b8c1b3e577e8f02928",
+      "publication": "included",
+      "published_path": "h2_full_experiment/settings.env.example",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "SOURCE_MANIFEST.json",
+      "size_bytes": 3132,
+      "original_sha256": "3226149e259175ff2accf711f7f07830626aff1ccd5a5e446c164f7d4bd5104a",
+      "publication": "included",
+      "published_path": "h2_full_experiment/SOURCE_MANIFEST.json",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "START_HERE.md",
+      "size_bytes": 4679,
+      "original_sha256": "e52f21d89b0f7bfeb2bd7823ff534bd35a0dff0f867bb8bd2444aaecc911ff36",
+      "publication": "included",
+      "published_path": "h2_full_experiment/START_HERE.md",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "status.py",
+      "size_bytes": 1015,
+      "original_sha256": "818f12cdd0f7ca35bc42dc1d2a675653fe5b4f182d8e150c7c70ba266b28b597",
+      "publication": "included",
+      "published_path": "h2_full_experiment/status.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "submit_campaign.py",
+      "size_bytes": 6476,
+      "original_sha256": "943cf060ce898d4d386cb643fe6077508cde64cc31de56de2fffa67f42d6cb90",
+      "publication": "included",
+      "published_path": "h2_full_experiment/submit_campaign.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "tests/test_core.py",
+      "size_bytes": 15092,
+      "original_sha256": "1e90486b0fefac7caade2ae7f05be8f3a4719e7501c386b5bb3b59361712c231",
+      "publication": "included",
+      "published_path": "h2_full_experiment/tests/test_core.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "tests/test_submission.py",
+      "size_bytes": 2697,
+      "original_sha256": "a8fa42feb7d16091bcfd761697655d7992d92f42482cc8780c26c645a92f3573",
+      "publication": "included",
+      "published_path": "h2_full_experiment/tests/test_submission.py",
+      "reason": null
+    },
+    {
+      "source_package": "full_experiment_v2",
+      "relative_path": "VALIDATION.md",
+      "size_bytes": 2877,
+      "original_sha256": "d9cd77e1a72478c5ba0a99bf575b25caebae5e92c0d0c2287d13eac59579ee31",
+      "publication": "included",
+      "published_path": "h2_full_experiment/VALIDATION.md",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "__pycache__/analyze.cpython-313.pyc",
+      "size_bytes": 8545,
+      "original_sha256": "9b99dfcfa042fdbf6809ae5da2b2cc8e3064f39481c8a532258694be105bc22a",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Generated Python cache excluded"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "__pycache__/prepare.cpython-313.pyc",
+      "size_bytes": 9375,
+      "original_sha256": "0aa9272a230e2c24cff9234fc42e02f07180b63b8e556332cd0656e144650deb",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Generated Python cache excluded"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "__pycache__/train_and_probe.cpython-313.pyc",
+      "size_bytes": 13506,
+      "original_sha256": "b447de7ab04c4fcdc037db0dc0243ae5395719edfe5a82ed6b55a41d18e54622",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Generated Python cache excluded"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "analyze.py",
+      "size_bytes": 3947,
+      "original_sha256": "c789d7b69f6586383f0efce03454d7402deac54e73953a6a6ca24e9613b140ac",
+      "publication": "included",
+      "published_path": "legacy/h2_llm_testbed/analyze.py",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/ag_news/probe.jsonl",
+      "size_bytes": 1014333,
+      "original_sha256": "f7cc4f21505976b36c04f1d2865a4a19ff9e87b4d9ebe10204f32c99ceba268f",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/ag_news/test.jsonl",
+      "size_bytes": 2553148,
+      "original_sha256": "2f439a8b8d2d8c78301da514a93308b388bbae62155b8602d867a0eadd656c1b",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/ag_news/train.jsonl",
+      "size_bytes": 25545394,
+      "original_sha256": "d8c97000eebdcd7bd0b177b6a6d2732dc1ece25e6dc9eda6c67979fee4d20645",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/ag_news/validation.jsonl",
+      "size_bytes": 1019769,
+      "original_sha256": "59c7e2004fc08df799a50d9c65498b0d7f6702bfaab7e5d88b633a759a36babc",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/manifest.json",
+      "size_bytes": 4487,
+      "original_sha256": "9d383a52096bfb7fe561e8eee5d22cb0131cef218f8fc5c23363e929646a6241",
+      "publication": "included",
+      "published_path": "provenance/legacy_large_data_manifest.json",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/mnli/probe.jsonl",
+      "size_bytes": 873201,
+      "original_sha256": "040f4a4c0836baaff7a7fedbbb0feee8cdbb17e7abbfa69a19a937241a0515c8",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/mnli/test.jsonl",
+      "size_bytes": 2172663,
+      "original_sha256": "8d0a4bd7f92bcc755b30e1548939ffd5f571f61bbe5b526eb87ef26da5df85bb",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/mnli/train.jsonl",
+      "size_bytes": 21865289,
+      "original_sha256": "a51a8a72a79c78f67730ff79bcf44ab1f642925aea23a1b9fa1ad6caf467f1b4",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/mnli/validation.jsonl",
+      "size_bytes": 869345,
+      "original_sha256": "0dd45572d59050ea0dc253d033ab284693c1959c98e3b72563e2a5a22083b86c",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/qnli/probe.jsonl",
+      "size_bytes": 1020502,
+      "original_sha256": "0581ef7f9b82be1431f041015c54900472485a32aa0f5163a84fb55ed9831206",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/qnli/test.jsonl",
+      "size_bytes": 2537205,
+      "original_sha256": "c30f70739a0b8d4efa188f5ff8e6e46dd87263f274fe37a4094a965de1288ad4",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/qnli/train.jsonl",
+      "size_bytes": 25488347,
+      "original_sha256": "15578a524562dd2d4d69edff573175edb3021538a920985b26cd060be8fbc4b0",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/qnli/validation.jsonl",
+      "size_bytes": 1027495,
+      "original_sha256": "8eb3a7165d984dbf9544cdc3e20283eceba50239f7137fd9278eaae7d0f04bd5",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/qqp/probe.jsonl",
+      "size_bytes": 727701,
+      "original_sha256": "8252f1b810c0cac7a81af8ff4a3c09aed0d859f000d99acc1332a594504e3561",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/qqp/test.jsonl",
+      "size_bytes": 1827661,
+      "original_sha256": "051dcdf7642197d999b1901710b8c024a0cfd56f58a349354d41dec41184f985",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/qqp/train.jsonl",
+      "size_bytes": 18246009,
+      "original_sha256": "a11d34ae40ed3d551d05d19cc62ca511f2b27c50a090570e71d6231d0abb3aeb",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/qqp/validation.jsonl",
+      "size_bytes": 729255,
+      "original_sha256": "fdf40037c13f4312130f78e653f8eae21dd2028f070a9d7c238f99b873a60f53",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/sst2/probe.jsonl",
+      "size_bytes": 561209,
+      "original_sha256": "ea34bada07d32d032f53e6011549ac58ec24e23a44db851b574f3eb803e1edf8",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/sst2/test.jsonl",
+      "size_bytes": 1399656,
+      "original_sha256": "85c07ea547423f119b829934dcf5b6c6002e08e29df120f1a12b564450d4d44e",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/sst2/train.jsonl",
+      "size_bytes": 13983907,
+      "original_sha256": "0a64ccbb74b2d2308eef4e186a8cf015b9e0b94e2359ccbd1247b3fbded5d410",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "data/sst2/validation.jsonl",
+      "size_bytes": 562065,
+      "original_sha256": "bbf9cd4ac81d9cb9e6a1dd1197c17040f8fe4c97357877e156304e8ad7045c9b",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Source dataset rows retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/accuracy.json",
+      "size_bytes": 862,
+      "original_sha256": "f6c5c8362914bb86b1ccdebdb68945b29dab3e5011b5f128f5e61fbf4493ca97",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/accuracy.json",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_1_sst2/adapter_config.json",
+      "size_bytes": 1214,
+      "original_sha256": "c60f4b643798abd857b0ddb461ef5938ca3c5a3263f31baa0cc962dc1d57b562",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/checkpoint_metadata/stage_1_sst2/adapter_config.json",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_1_sst2/adapter_model.safetensors",
+      "size_bytes": 25720120,
+      "original_sha256": "f2e3f138d212d15aaa6ce39cc35139b1cc3ee3ef863236b8887310bd3549dcd0",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Trained model weights retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_1_sst2/README.md",
+      "size_bytes": 5370,
+      "original_sha256": "cfbc894b125898425c4fbe037e077fc9424dbf4a4e13a77b51e34ad9f8298604",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Generated checkpoint model card retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_2_qqp/adapter_config.json",
+      "size_bytes": 1214,
+      "original_sha256": "c60f4b643798abd857b0ddb461ef5938ca3c5a3263f31baa0cc962dc1d57b562",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/checkpoint_metadata/stage_2_qqp/adapter_config.json",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_2_qqp/adapter_model.safetensors",
+      "size_bytes": 25720120,
+      "original_sha256": "38aa0586d30c72672f38bbc48535e3a738eac48d8eec4cc16c4c14ecee585862",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Trained model weights retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_2_qqp/README.md",
+      "size_bytes": 5370,
+      "original_sha256": "cfbc894b125898425c4fbe037e077fc9424dbf4a4e13a77b51e34ad9f8298604",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Generated checkpoint model card retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_3_qnli/adapter_config.json",
+      "size_bytes": 1214,
+      "original_sha256": "c60f4b643798abd857b0ddb461ef5938ca3c5a3263f31baa0cc962dc1d57b562",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/checkpoint_metadata/stage_3_qnli/adapter_config.json",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_3_qnli/adapter_model.safetensors",
+      "size_bytes": 25720120,
+      "original_sha256": "5ea101b052ce3e319ff92a9acdc315c4ad4c5d935acc5ac6c6d164a599cb81cb",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Trained model weights retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_3_qnli/README.md",
+      "size_bytes": 5370,
+      "original_sha256": "cfbc894b125898425c4fbe037e077fc9424dbf4a4e13a77b51e34ad9f8298604",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Generated checkpoint model card retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_4_mnli/adapter_config.json",
+      "size_bytes": 1214,
+      "original_sha256": "c60f4b643798abd857b0ddb461ef5938ca3c5a3263f31baa0cc962dc1d57b562",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/checkpoint_metadata/stage_4_mnli/adapter_config.json",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_4_mnli/adapter_model.safetensors",
+      "size_bytes": 25720120,
+      "original_sha256": "c05c3ce64ecb4618e8eeacf556b431d14973daaa0fef8a54d505cf4662cc4a03",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Trained model weights retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_4_mnli/README.md",
+      "size_bytes": 5370,
+      "original_sha256": "cfbc894b125898425c4fbe037e077fc9424dbf4a4e13a77b51e34ad9f8298604",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Generated checkpoint model card retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_5_ag_news/adapter_config.json",
+      "size_bytes": 1214,
+      "original_sha256": "c60f4b643798abd857b0ddb461ef5938ca3c5a3263f31baa0cc962dc1d57b562",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/checkpoint_metadata/stage_5_ag_news/adapter_config.json",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_5_ag_news/adapter_model.safetensors",
+      "size_bytes": 25720120,
+      "original_sha256": "24752aa9fac5f36f4fb157e3f49a1dc6cab85870678209dd1f887c555fead277",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Trained model weights retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/checkpoints/stage_5_ag_news/README.md",
+      "size_bytes": 5370,
+      "original_sha256": "cfbc894b125898425c4fbe037e077fc9424dbf4a4e13a77b51e34ad9f8298604",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Generated checkpoint model card retained locally"
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/config.json",
+      "size_bytes": 429,
+      "original_sha256": "346aa800012e72e071f42b463fb51eded42beaff2d3a67649036f09265e70cd4",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/config.json",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/documentation/analyze.py",
+      "size_bytes": 3947,
+      "original_sha256": "c789d7b69f6586383f0efce03454d7402deac54e73953a6a6ca24e9613b140ac",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/documentation/analyze.py",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/documentation/data_manifest.json",
+      "size_bytes": 4109,
+      "original_sha256": "ade9a01dfd45e24977ede146d58b59991189270e58229bfb06c111c52556accd",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/documentation/data_manifest.json",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/documentation/documentation-captured-at.txt",
+      "size_bytes": 26,
+      "original_sha256": "f450b7f51907f022649f54d4d51df76308e3573280875b54b4609ed8f2e089e8",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/documentation/documentation-captured-at.txt",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/documentation/gpu_36125.master.log",
+      "size_bytes": 1497,
+      "original_sha256": "e0b222a8268c8ab3d5e1248c014ec7c32d8fc4d2abf6bbe8339cd3948f5f9bcb",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/documentation/gpu_36125.master.log",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/documentation/packages.txt",
+      "size_bytes": 1644,
+      "original_sha256": "22bf0e2e069cccd10f9e5f3da6a2915b647245d1b347e6c5c2781beaea3a7e1e",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/documentation/packages.txt",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/documentation/prepare.py",
+      "size_bytes": 6085,
+      "original_sha256": "3652cff1665430bbc7f483a2e07eb0ccb5cddb935a8163da13133970cc1c7a44",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/documentation/prepare.py",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/documentation/python-version.txt",
+      "size_bytes": 15,
+      "original_sha256": "ecccd6f14c1331e1400467a35f90f45097cb5c1a8635942d2b9b96b849cb63fb",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/documentation/python-version.txt",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/documentation/requirements.txt",
+      "size_bytes": 161,
+      "original_sha256": "7a67ff794526fe87f00c2a4fe0b6a4d3eaaef779ab66330472a33a1627302908",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/documentation/requirements.txt",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/documentation/source-sha256.txt",
+      "size_bytes": 401,
+      "original_sha256": "58c1f7a0b8b46518fed52c333b4abeb821492c03c51085073fc881d156e1b8c1",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/documentation/source-sha256.txt",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/documentation/train_and_probe.py",
+      "size_bytes": 7156,
+      "original_sha256": "8e6c9a1a2374d4cbf608c33ab39f3bc68d5d6134e5ef3dcc616ba46b0c7b67a6",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/documentation/train_and_probe.py",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/documentation/train_h2.pbs",
+      "size_bytes": 2601,
+      "original_sha256": "2c2b046c98862e4d62356d9e8eb4e6df5da9273dec1ef98e67a48171121da36f",
+      "publication": "included",
+      "published_path": "results/historical/h100_smoke_36125.master/documentation/train_h2.pbs",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/ag_news_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "ddcace5e7079341db7ed6a7970efdb762ca4efa78320062582e28e42878c7b4c",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/ag_news_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "1e05cfce0872a372f2acd40b346a927961b18015966b2775178d34ab2babdd3f",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/ag_news_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "5ef43073c846fe346183bfc0719c30398206a3ef0cbc592314218668c7ab7a23",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/mnli_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "30bedb33aea493ff8ac62e396a3f6e984a5dd18aad9775ead2610b7dbdc2ce57",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/mnli_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "a1a44e7dc28b99b524bc30d44686f25cf3056dcd17a57e532a74215871c26e6f",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/mnli_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "45ae71dd15ecb07f6bef84efbd3457950b35170b66a39ef360cc66b5dafa19a3",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/qnli_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "a46d35ff927edc9b844be5d7e4c6658cf789e56d98f6b1ff83ba655ed2813496",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/qnli_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "1381f7e16101a520e0dcacd5e7dd12a60833d29ab829a91bd253ced95870e2af",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/qnli_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "184983fad589b32bee9f7666d46a802a789cc184f4eb447d5ef4ca2f49ba4f83",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/qqp_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "4fc11305269962d369ba2c627101bf0dc54878485520cd6e80feae85fd6201ab",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/qqp_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "db16647aa2c6c485207291784edaf9c3b82a7c68dae1a7f6aeee8af8dedb42c6",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/qqp_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "0760f8a2a3305c47f8eeda08e2826c440c7b5051a34ff8873baf3c6390b61371",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/sst2_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "c84aec87932d43c34bf3a1cd4a86a90b1a1c86a2d694c602ca7d767a1fd7d088",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/sst2_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "a4c58f884c5f100c76e92bdab2556413bcb88520d5baa88a8adfdfdecb18c74f",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_0/sst2_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "ca6232c39505cee61c42eaa5e50eb9cd8f0edfb1b3b632becd378c3b63a42544",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/ag_news_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "9958e4489d052f6d408050bac2c88c230263f46ef44b1b4d6438cfb7a2dcfd03",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/ag_news_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "c948e733e6d63b594b02b0ccb34f6ad50ecad025a76b2e68bb0e9a98351fc908",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/ag_news_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "d01dad889d3dc83ca7c8b41d8868bc9cade7e06b545bd161a87bbb111b3ecac9",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/mnli_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "9f52758856abe4c9fcacf45be316b96aad7d568dc5aa5f11790a86e8ecc393b4",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/mnli_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "3b77b5317d05c8eff944f6d2f4f17a7974809f59f06cfc3e3e37c67e900c1ce0",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/mnli_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "b3e040decbef51b3be665f7ccf6b057b5b6c53a4831737c1113a192f76a0421d",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/qnli_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "b82ce14673ce01ba2fbdb8996b2842229c1555c94858137146bee5a263bae60f",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/qnli_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "c065a4bb67932f3c892982bed1cdc4dbb173e30733fcd52e7fa66342e243fb69",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/qnli_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "99588271e857a1c311e50be1886ba3281be632c3e1c95fc6505ec01dd77aaaba",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/qqp_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "21b55c09b9cc40e8a44e9cd5246c7615c135b9155e7696e7e1c6a9bcf8e06955",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/qqp_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "9afd0243166660cd59aeb3a7042c36148c5e90f1cc241706e787e3327d7f2930",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/qqp_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "d63dcdd342c909c0439f7b7f92d2d1bad3a59505287588db11ac735beeca2021",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/sst2_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "2ef8082a1c0748e67f5a60533a0f37cd4d646f81283234d362f94dd1140dcccb",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/sst2_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "4d8d495f859ac665cf07bd628d0267eab0106df659f88af6f484872c7ea5ab8a",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_1/sst2_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "818f0dbd85063140e916bd5506ca4d7a704686ef0c53ea22546654c759cb0097",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/ag_news_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "05aa1e2ae777d7912feff54a306b76b0c6e1344813f51c8de21bb51e4c63acf9",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/ag_news_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "5a2050ffc5f20cdc16d4ceecd8037dddb489f084e2fb2b3d1ab5f95344549dd6",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/ag_news_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "180c060de2a00770258e185c26a7cc6847c1bb1176908ee69adfa9ac5dd596e8",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/mnli_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "d377c06cdec50feb6d7462d3cbcfbeb6bf7add73b26e979e4255bc0d5a9ff92f",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/mnli_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "3970934146877fe510b6a6cfff6d32b02e322f5942e580a6d246fdfd3c128eec",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/mnli_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "f427ccb7d641214f697c91264e57afe3a7aabe3bde584bf76062663a70dcb40e",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/qnli_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "7440f9b86ad19ba70ec4ed17f5f6a3291695273ce17096d03788f4792d832da1",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/qnli_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "ff691756bd45c05bb7cbdc70751a89544884cc0a6acee0bc3cf12f9a7d2d0804",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/qnli_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "e54b65101351a9c7afa6f0772ae81bbfd6a5bc54f016f43a26fa9af09f995b7d",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/qqp_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "9199a8e29afcbef37580512d57b48d13fd635ad443324a5c62fcbc76d3f2f754",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/qqp_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "ec1f04419c76a6d67920c7b5287973ef96c8e68d8635c1f3de0a70c4540549b4",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/qqp_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "61fff8438175d6a7d243e1676834917761b0da5cd1a83fbddd077c12329c9c8e",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/sst2_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "5f29b6facb4b877b232ca1fc086d65c846166c46a7d3bc6713d5728cc91a0820",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/sst2_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "40a42f4eeb1408040431827824f5668dc48bf057583384dd6b5b8f78cf09e8b2",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_2/sst2_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "b74505eb1dfc9f11fbbc6114b679553a787514118875629b5c772e9c161f1fe7",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/ag_news_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "8dc202022135d3d4b97951b0d8177b02cade89923392948d92da8571c02b134b",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/ag_news_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "a8c600c10a859151f514367feda0a0b3916a79cecd8ee8ae2427c95ce80e7311",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/ag_news_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "777e59380d5c79bca3fd0740d881c0badb905de434ab7e837b5cd8682a574983",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/mnli_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "3d01e2d994faaf43a36273057a8d02f531bcc0a0e519687bc21b279f6fcf6e55",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/mnli_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "fb0be208f82cc9d79ccfcbee1abd75af13acd9ff4c5b6a61d1662f946ea59524",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/mnli_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "85775d319ada1393757b3aa1532bbf8e8118b322ed954c9ec7afbcc8ba7d0028",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/qnli_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "70edfa93c5d66097322274ef3e62bfb922af44dafa141f49a6417f4cfad3b935",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/qnli_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "504e45507e48fbeb2afe7d47035662bad71f73c7204f79c81847f2af3cf1a761",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/qnli_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "9c5ba1a93f4b8605a42c6c8373273a438a1cbbea9a2adf048e3bb6088401e4e3",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/qqp_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "18de3f07ff4dc5dfb77a09cc57b3d54032fb0025217efece4324779621390039",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/qqp_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "220f957cf9711cd2385c7aa302059ef0ee30db019ed6292d2e9d71f8d9e8eb8b",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/qqp_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "1a6c2de5732b52030787a2dc77c5d97ae1e8dd806290da72efb4c627c527811c",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/sst2_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "3a1a76d071845a1280971589da1731a5834b4d6104c75b8bfbebad2ffe65a642",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/sst2_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "2f345715eb46942a1400f9818599dbbe270ab9b183a44efb62f84b2dce41fab8",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_3/sst2_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "1125ac72ac72d698f0008f0bff61bfa424ac6a95697beeed7025776ed0cf99df",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/ag_news_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "a61e62da665d8810582a179c443efa64355a050ed3db520e5b55c858d37eea07",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/ag_news_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "84c069d1ccdc4fdff1c678268d0756b0af69410a487cbaf5f9f8d408094b31b5",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/ag_news_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "1370a3bc3a675bb84a6c1d5940bdf0eb165feda04d15c30ffb8599c0ac65936c",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/mnli_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "5a5d85c2b4943d95f7d72fd85401968b3fb57989c288a54f3aadbb27345a1831",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/mnli_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "696dc853d864ba45d67f4cb8f01a8be7a6b0bfd9cc745e4f8acf3abe08c67598",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/mnli_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "8561c57409e04983181279b137f81f3ff8388a8cc46e3422aa964bcd506ba485",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/qnli_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "a78f0b93512ae54326bc1096e8d3b48d76caaae22c0e84b244c402aefd6bc917",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/qnli_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "51dae1d1b1aec38be32a40c857b5c59ce2213e2af51c93a4ed18afa0aff272c0",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/qnli_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "132c368888e0b56fd2213e48e7f7c0dc0e0e5dcf1b5e989b285513215e3859da",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/qqp_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "0f2e00a12652f3ff28d2f7467e8b8a43c399f1ed843a3d08a92f7bbe39315847",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/qqp_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "c88ca8fcb057eff75a46356452da306d0de3a57786dac0d509894ec75853e3d1",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/qqp_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "232dcb20f3c3cf5f60cef3ed0c16428f8d1d1e5eb14e20012a3d5008cddd589e",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/sst2_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "468496e7584ce0d166bb4c55efac13bd72a19c904153b9f116c85e25cf71cc50",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/sst2_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "d84386cbf029a3657d8dd30fd250b249c682465578eb86e68c9198e2c2ea973f",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_4/sst2_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "77de728c864a1db419ae30912e9e60612efceade9e8e36597a824c3d93a06ac2",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/ag_news_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "195db38fc3f30291409a3d18f88b567686c3510d61074da52cceceb821a02057",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/ag_news_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "3d5f453576c83ba0c39577f048fab2487be0cba4fb909511e2c78f6ec45c81f9",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/ag_news_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "2ebefd4ed49424d8e5871b85e847d96ea71b31be62411c6cf6fa1269730c9bec",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/mnli_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "4e4a13651708c499834931be965d62e9eeca2c1f9a1258208a09f4e7c13adc2e",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/mnli_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "aa7ff3b239ffad88548c692b9fb8c9a6a152d90a41d11864317921d2f5284d09",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/mnli_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "a70f3820d3d46cc82ba53eea2e2c834222e9c91c3015acb455fcda84189116f7",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/qnli_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "088640c8a2fa34e6277587dd3c6d553b3c047c0baad081bad13dcdb921e5f468",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/qnli_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "1d344786ee16764efcd0dfae75a581b7d8ac8f0fd0ce95b4f881a1d1a70fd443",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/qnli_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "319251759a8540a9ee76f9e25cb19656b90ae5596eb4fc3b01985b644ffc214e",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/qqp_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "1aefda8e3d8b69d5cb85a1b35f50c4d532565e5b99ea74048442a22e4f019fa7",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/qqp_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "3b6f748f9d0aff8e903cb024f9639e9303dee122fbfd1bb24adf292074a6ffec",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/qqp_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "05b1fef713e0216d54874a4b6cb05a520f642ca6e53d5a3800c7a6506b68fe17",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/sst2_layer14.npy",
+      "size_bytes": 245888,
+      "original_sha256": "a92634c004ed481bd06edd18bc882087246b7f0c22769763274ab004bc3aa9f9",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/sst2_layer22.npy",
+      "size_bytes": 245888,
+      "original_sha256": "2a6f8722ae9e8cb14e7baf0124b8d0748578ccfa8c4794407731426e079c5c39",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/features/stage_5/sst2_layer6.npy",
+      "size_bytes": 245888,
+      "original_sha256": "2d5380a0b07852f2c78c4104bb5a729b58c18d6ba1cea89196006d579f59a4e5",
+      "publication": "retained_locally",
+      "published_path": null,
+      "reason": "Raw feature array retained locally",
+      "array_header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          30,
+          2048
+        ]
+      }
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "h100_smoke_36125.master/h100_smoke_36124.master/config.json",
+      "size_bytes": 341,
+      "original_sha256": "b363dfd2512359477287112e2b5dcb2d41d169a0259bac6b8e285a6d74cedf05",
+      "publication": "included",
+      "published_path": "results/historical/failed_attempt_36124.master/config.json",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "prepare.py",
+      "size_bytes": 6085,
+      "original_sha256": "3652cff1665430bbc7f483a2e07eb0ccb5cddb935a8163da13133970cc1c7a44",
+      "publication": "included",
+      "published_path": "legacy/h2_llm_testbed/prepare.py",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "README.md",
+      "size_bytes": 3739,
+      "original_sha256": "6c9dd916bff0484efb3504b571e77de66d50a00e6d1ccd4a0ecd6f9004ec6f2a",
+      "publication": "included",
+      "published_path": "legacy/h2_llm_testbed/README.md",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "requirements.txt",
+      "size_bytes": 161,
+      "original_sha256": "7a67ff794526fe87f00c2a4fe0b6a4d3eaaef779ab66330472a33a1627302908",
+      "publication": "included",
+      "published_path": "legacy/h2_llm_testbed/requirements.txt",
+      "reason": null
+    },
+    {
+      "source_package": "legacy_testbed",
+      "relative_path": "train_and_probe.py",
+      "size_bytes": 7156,
+      "original_sha256": "8e6c9a1a2374d4cbf608c33ab39f3bc68d5d6134e5ef3dcc616ba46b0c7b67a6",
+      "publication": "included",
+      "published_path": "legacy/h2_llm_testbed/train_and_probe.py",
+      "reason": null
+    }
+  ]
+}

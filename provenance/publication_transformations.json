@@ -1,0 +1,88 @@
+{
+  "replacements": [
+    "Local HPC username -> YOUR_HPC_USER",
+    "Local HPC address -> YOUR_HPC_HOST",
+    "Local Windows username -> LOCAL_USER"
+  ],
+  "files": [
+    {
+      "published_path": "h2_full_experiment/pbs/common.sh",
+      "transformation": "Local account/server path identifiers generalized; scientific values retained.",
+      "original_sha256": "7971f729437d094170d8fc1620d9ef774cf5b4fdb330a2ba8ecfdc217f6df18e",
+      "published_sha256": "6e6d290b1cd8add4d51155c0801199abfbbae3f1789817e2a59f22dddf6d1a6a"
+    },
+    {
+      "published_path": "h2_full_experiment/README.md",
+      "transformation": "Local account/server path identifiers generalized; scientific values retained.",
+      "original_sha256": "7b2b2f8024a252a362da3ef096af3371c7cc0f18df83a62b5c916b81e60e1ece",
+      "published_sha256": "6370a1692057d2abbb2d9a553f43cc8c093ec410241e0409bb00c4a43cc11cec"
+    },
+    {
+      "published_path": "h2_full_experiment/settings.env.example",
+      "transformation": "Local account/server path identifiers generalized; scientific values retained.",
+      "original_sha256": "36dcc201bbf3f634bf976bb9b270938b6e0d33e53989b8b8c1b3e577e8f02928",
+      "published_sha256": "97547240408c1c95494674c893d36f6b285cd32b6ec977de049c8bf00d918eff"
+    },
+    {
+      "published_path": "h2_full_experiment/START_HERE.md",
+      "transformation": "Local account/server path identifiers generalized; scientific values retained.",
+      "original_sha256": "e52f21d89b0f7bfeb2bd7823ff534bd35a0dff0f867bb8bd2444aaecc911ff36",
+      "published_sha256": "4fa4d857e4b24acaa4ee75ea29330348415df0b2751da5c35370d53b290a08e0"
+    },
+    {
+      "published_path": "h2_full_experiment/status.py",
+      "transformation": "Local account/server path identifiers generalized; scientific values retained.",
+      "original_sha256": "818f12cdd0f7ca35bc42dc1d2a675653fe5b4f182d8e150c7c70ba266b28b597",
+      "published_sha256": "dc458cbfde1bff36a0e8e4bdde7af32328a3b9b51ac949c80dc93d85220bbe0e"
+    },
+    {
+      "published_path": "results/historical/h100_smoke_36125.master/checkpoint_metadata/stage_1_sst2/adapter_config.json",
+      "transformation": "Local account/server path identifiers generalized; scientific values retained.",
+      "original_sha256": "c60f4b643798abd857b0ddb461ef5938ca3c5a3263f31baa0cc962dc1d57b562",
+      "published_sha256": "4e0d8c80e8f3b9ac81b8d8db7505173b841b99da98b8c91929fc516bfe9a9cc3"
+    },
+    {
+      "published_path": "results/historical/h100_smoke_36125.master/checkpoint_metadata/stage_2_qqp/adapter_config.json",
+      "transformation": "Local account/server path identifiers generalized; scientific values retained.",
+      "original_sha256": "c60f4b643798abd857b0ddb461ef5938ca3c5a3263f31baa0cc962dc1d57b562",
+      "published_sha256": "4e0d8c80e8f3b9ac81b8d8db7505173b841b99da98b8c91929fc516bfe9a9cc3"
+    },
+    {
+      "published_path": "results/historical/h100_smoke_36125.master/checkpoint_metadata/stage_3_qnli/adapter_config.json",
+      "transformation": "Local account/server path identifiers generalized; scientific values retained.",
+      "original_sha256": "c60f4b643798abd857b0ddb461ef5938ca3c5a3263f31baa0cc962dc1d57b562",
+      "published_sha256": "4e0d8c80e8f3b9ac81b8d8db7505173b841b99da98b8c91929fc516bfe9a9cc3"
+    },
+    {
+      "published_path": "results/historical/h100_smoke_36125.master/checkpoint_metadata/stage_4_mnli/adapter_config.json",
+      "transformation": "Local account/server path identifiers generalized; scientific values retained.",
+      "original_sha256": "c60f4b643798abd857b0ddb461ef5938ca3c5a3263f31baa0cc962dc1d57b562",
+      "published_sha256": "4e0d8c80e8f3b9ac81b8d8db7505173b841b99da98b8c91929fc516bfe9a9cc3"
+    },
+    {
+      "published_path": "results/historical/h100_smoke_36125.master/checkpoint_metadata/stage_5_ag_news/adapter_config.json",
+      "transformation": "Local account/server path identifiers generalized; scientific values retained.",
+      "original_sha256": "c60f4b643798abd857b0ddb461ef5938ca3c5a3263f31baa0cc962dc1d57b562",
+      "published_sha256": "4e0d8c80e8f3b9ac81b8d8db7505173b841b99da98b8c91929fc516bfe9a9cc3"
+    },
+    {
+      "published_path": "results/historical/h100_smoke_36125.master/config.json",
+      "transformation": "Local account/server path identifiers generalized; scientific values retained.",
+      "original_sha256": "346aa800012e72e071f42b463fb51eded42beaff2d3a67649036f09265e70cd4",
+      "published_sha256": "906dbfbb636c3adb2e5d1866696f9e3626aab4571c8acbdd0ba625775aa9a88b"
+    },
+    {
+      "published_path": "results/historical/h100_smoke_36125.master/documentation/gpu_36125.master.log",
+      "transformation": "Local account/server path identifiers generalized; scientific values retained.",
+      "original_sha256": "e0b222a8268c8ab3d5e1248c014ec7c32d8fc4d2abf6bbe8339cd3948f5f9bcb",
+      "published_sha256": "42b6736a921df7904bbf877761e5bdb8dddc02f4499919b308a9a7da2d41e202"
+    },
+    {
+      "published_path": "results/historical/h100_smoke_36125.master/documentation/train_h2.pbs",
+      "transformation": "Local account/server path identifiers generalized; scientific values retained.",
+      "original_sha256": "2c2b046c98862e4d62356d9e8eb4e6df5da9273dec1ef98e67a48171121da36f",
+      "published_sha256": "75ff32f0898fdcb2ad30b10b7cef5a3e3a994729c7142adce71cedd8a32e3b34"
+    }
+  ],
+  "note": "The full-package SOURCE_MANIFEST.json is regenerated for published copies. Original hashes are retained separately. Historical source-sha256.txt describes original executed artifacts; consult the transformation map for changed copies."
+}
