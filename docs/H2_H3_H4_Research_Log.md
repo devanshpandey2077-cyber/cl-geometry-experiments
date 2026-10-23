@@ -3,10 +3,10 @@
 # H2, H3 and H4 — Empirical Research Log
 
 Created: 23 October 2026. Time zone for human entries: Asia/Calcutta (UTC+05:30).
-Record version: 1.2. Initial event: EVT-000001. Latest event: EVT-000003.
+Record version: 1.3. Initial event: EVT-000001. Latest event: EVT-000004.
 Owner: the researcher. Scope: continual learning, representation geometry and forgetting.
 
-**Current position:** the notebook is active; original historical pilot files were inspected in EVT-000003, and GitHub publication is being prepared. No new training, hypothesis test or causal intervention was executed while creating it. Historical evidence is imported below with its provenance and limitations. H2, H3 and H4 remain undetermined by the evidence reviewed for this entry.
+**Current position:** the notebook is active; original historical pilot files were inspected in EVT-000003, and the code/documentation repository is published and verified in EVT-000004. No new training, hypothesis test or causal intervention was executed while creating it. Historical evidence is imported below with its provenance and limitations. H2, H3 and H4 remain undetermined by the evidence reviewed for this entry.
 
 ## 1. Purpose and how we will maintain this record
 
@@ -113,7 +113,6 @@ H2 does not establish H3 or H4. A working H2 implementation is not an H3/H4 impl
 | SRC-003 | continual_learning_research_chat_summary.md; libfile_ba8a7c3e81108191bf597d859a889fd6 | Extracted text through line 400, including hypothesis/phase summary | Summary rather than primary execution evidence; remaining lines not needed for initial register |
 | SRC-004 | C:/Users/LOCAL_USER/.codex/.chatgpt-projects/g-p-6ac3fc8a54108191a281d9eb60dde722/h2-test-output.txt | Local test-output text and SHA256 | Old CPU software tests, not newly executed hypothesis experiments |
 | SRC-005 | Researcher's request in this chat, received 23 October 2026 | Request to document every H2/H3/H4 experiment, readings, settings and repetitions | Does not specify a frozen campaign or supply a new run |
-
 | SRC-006 | Local H2_Full_Experiment_v2/h2_full_experiment directory supplied by researcher | All 35 entries in original SOURCE_MANIFEST.json match the local file bytes; 36 files including the manifest | Static/source verification, not a new training run |
 | SRC-007 | Local h2_llm_testbed/h100_smoke_36125.master/accuracy.json and config.json | Complete five-stage trained-task accuracy readings and resolved pilot arguments | Historical execution; no baseline accuracy or seed uncertainty |
 | SRC-008 | Local pilot documentation directory | Saved code, PBS script, package list, GPU log, data manifest and source hashes | Original run artifacts inspected locally; not an independent server inspection |
@@ -586,7 +585,7 @@ Do not delete a run because it weakens the hypothesis. Exclusions must follow pr
 | DEC-001 | 2026-10-23 | Begin one continuous, detailed H2/H3/H4 record; preserve unfavorable and incomplete evidence | SRC-005 | This file is the working notebook |
 | DEC-002 | 2026-10-23 | Import historical work with explicit provenance, not as new hypothesis replications | SRC-001–004 | Current hypotheses remain undetermined |
 | DEC-003 | 2026-10-23 | Keep observed, calculated, proposed and unknown items distinct | Source gaps and scientific scope | No invented readings or retroactive preregistration |
-| DEC-004 | 2026-10-23 | Prepare a new public GitHub repository named cl-geometry-experiments, as selected by the researcher | GitHub destination choice in this chat | Upload authorized; publication blocked by repository creation/sign-in and source-file access |
+| DEC-004 | 2026-10-23 | Prepare a new public GitHub repository named cl-geometry-experiments, as selected by the researcher | GitHub destination choice in this chat | Upload authorized; initial access blockers resolved in EVT-000003 and publication verified in EVT-000004 |
 
 ## 15. Chronological event journal
 
@@ -642,6 +641,20 @@ Ninety saved feature files cover six stages × five tasks × three layers; their
 
 Publication scope: copy all experiment code, configuration profiles, tests and setup documents; label the earlier starter legacy; include the small pilot records, checkpoint metadata, a full local artifact inventory with original byte hashes, and the research log. Raw datasets, model weights, feature arrays and Python caches remain in the original local folders rather than ordinary Git history. Public copies replace local account/server identifiers with placeholders; transformation records and both original/published source hashes make this explicit. The algorithms and numerical measurements are not changed. Repository publication is pending at this event; a verified commit is recorded afterward.
 
+### EVT-000004 — GitHub publication verified
+
+Date recorded: 23 October 2026, Asia/Calcutta. Type: research infrastructure and preservation. No new scientific experiment or hypothesis analysis.
+
+Public repository: https://github.com/devanshpandey2077-cyber/cl-geometry-experiments . Branch: main. The researcher created the repository and supplied the local source folders; the existing GitHub connection completed the upload without requiring browser authentication.
+
+Verified initial import commit: 47054fe5f981a8fcdd7ab4dd8fac49d153b00a20. Initial import tree: 325757ed0db5c51ef333914773895dea911826e6. All 69 published file blob hashes matched the intended local publication copies after normalizing line endings to LF. The complete remote recursive tree was retrieved without truncation. The default-branch README, main training engine and notebook were also read back. A follow-up documentation commit records this event and its publication metadata; the cited initial import hash remains the reproducible code/evidence snapshot.
+
+Included: full version-2 package, legacy starter, 23 supplied Python files including saved historical copies, configuration profiles, PBS scripts, tests, documentation, research notebook, small historical run outputs and adapter configurations, source-integrity checks, original source manifest and the full inventory of 184 supplied local files. The initial publication retained 123 generated/data/model files locally, with original byte sizes and SHA256 identifiers recorded. Large dataset JSONL files, 90 feature arrays, five adapter weights and caches were not uploaded. Inventory hashes are identifiers, not a backup of those excluded bytes.
+
+All 35 original version-2 manifest entries and all five historical documented source hashes matched before publication. Public copies generalize local account/server identifiers; source manifests and transformation notes distinguish them from original executed files. Two text files arrived with CRLF line endings and are published as LF: the larger legacy data manifest and historical GPU log. This does not change their numerical readings; their original-byte hashes remain in the inventory. Original Downloads and synced reference files were not modified.
+
+Verification is limited to source integrity, static Python syntax, JSON parsing, checked credential patterns and remote publication integrity. No dependency installation, unit-test rerun, H100 training, H2 inversion analysis, H3 forecast or H4 intervention occurred. Research conclusions and new-run counters remain unchanged. Future updates should preserve history, identify the exact code commit used by each run, and commit only reviewed new files and notebook changes. Publishing later raw artifacts requires an explicit storage/distribution plan.
+
 ### Event template — append below without deleting earlier entries
 
     event_ID / event_type:
@@ -681,5 +694,6 @@ The hypothesis-specific requirements above are a proposed research-record design
 | 1.0 | 2026-10-23 | Initial notebook, source/hypothesis registers, historical evidence, full run templates, coverage and audit records | No; all three hypotheses undetermined |
 | 1.1 | 2026-10-23 | Record public GitHub destination, account/source metadata checks, access failures and remaining publication steps | No; research infrastructure only |
 | 1.2 | 2026-10-23 | Import original pilot readings/config/source verification and prepare public code repository | No new experiment; complete historical BWT now recoverable |
+| 1.3 | 2026-10-23 | Record verified public repository import, checksums and publication scope | No new experiment or hypothesis conclusion |
 
 End of initial record. Append subsequent events and run records while retaining this provenance.

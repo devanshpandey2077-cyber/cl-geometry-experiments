@@ -2,7 +2,8 @@
   "replacements": [
     "Local HPC username -> YOUR_HPC_USER",
     "Local HPC address -> YOUR_HPC_HOST",
-    "Local Windows username -> LOCAL_USER"
+    "Local Windows username -> LOCAL_USER",
+    "CRLF text line endings -> LF for Git publication"
   ],
   "files": [
     {
@@ -75,7 +76,7 @@
       "published_path": "results/historical/h100_smoke_36125.master/documentation/gpu_36125.master.log",
       "transformation": "Local account/server path identifiers generalized; scientific values retained.",
       "original_sha256": "e0b222a8268c8ab3d5e1248c014ec7c32d8fc4d2abf6bbe8339cd3948f5f9bcb",
-      "published_sha256": "42b6736a921df7904bbf877761e5bdb8dddc02f4499919b308a9a7da2d41e202"
+      "published_sha256": "4117a1a7b07eb0b36455c54b11abf00ee73bea4164d2c2db5ccabbc422babe7b"
     },
     {
       "published_path": "results/historical/h100_smoke_36125.master/documentation/train_h2.pbs",
