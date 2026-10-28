@@ -1,0 +1,16 @@
+{
+  "extends": "full.json",
+  "name": "smollm2",
+  "model": {
+    "repo": "HuggingFaceTB/SmolLM2-1.7B",
+    "revision": null
+  },
+  "features": {
+    "layers": [
+      5,
+      12,
+      19
+    ],
+    "primary_layer": 12
+  }
+}

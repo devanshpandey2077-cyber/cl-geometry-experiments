@@ -1,0 +1,158 @@
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.3.5 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "<string>", line 1, in <module>
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 322, in discover
+    tests = list(self._find_tests(start_dir, pattern))
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 377, in _find_tests
+    tests, should_recurse = self._find_test_path(full_path, pattern)
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 407, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 350, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_compact.py", line 13, in <module>
+    import test_core
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_core.py", line 12, in <module>
+    import torch
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 1382, in <module>
+    from .functional import *  # noqa: F403
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\functional.py", line 7, in <module>
+    import torch.nn.functional as F
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\__init__.py", line 35, in <module>
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\transformer.py", line 20, in <module>
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at ..\torch\csrc\utils\tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+test_corrupt_retained_statistics_and_capsule_rejected (test_compact.CompactTests.test_corrupt_retained_statistics_and_capsule_rejected) ... ERROR
+test_full_joint_and_sensitivity_outputs_identical_after_release (test_compact.CompactTests.test_full_joint_and_sensitivity_outputs_identical_after_release) ... ERROR
+test_guard_and_zip_path_validation (test_compact.CompactTests.test_guard_and_zip_path_validation) ... ERROR
+test_missing_archive_and_corrupt_original_prevent_release (test_compact.CompactTests.test_missing_archive_and_corrupt_original_prevent_release) ... ERROR
+test_pack_retry_and_submission_gate (test_compact.CompactTests.test_pack_retry_and_submission_gate) ... ERROR
+test_release_requires_both_verified_acknowledgements (test_compact.CompactTests.test_release_requires_both_verified_acknowledgements) ... ERROR
+test_content_spans_and_truncation_keep_answer (test_core.DataAndPromptTests.test_content_spans_and_truncation_keep_answer) ... ok
+test_exact_conflicts_and_cross_task_question_group (test_core.DataAndPromptTests.test_exact_conflicts_and_cross_task_question_group) ... ok
+test_exploratory_confirmation_exact_fields_are_disjoint (test_core.DataAndPromptTests.test_exploratory_confirmation_exact_fields_are_disjoint) ... ok
+test_grouped_split_balance_and_leakage_detection (test_core.DataAndPromptTests.test_grouped_split_balance_and_leakage_detection) ... ok
+test_padding_and_pooling_exclude_instruction_values (test_core.DataAndPromptTests.test_padding_and_pooling_exclude_instruction_values) ... ok
+test_affinity_feature_coordinates_and_common_rotation (test_core.GeometryTests.test_affinity_feature_coordinates_and_common_rotation) ... ok
+test_constructed_reversal_and_near_tie_rule (test_core.GeometryTests.test_constructed_reversal_and_near_tie_rule) ... ok
+test_global_groups_share_multiplicity (test_core.GeometryTests.test_global_groups_share_multiplicity) ... ok
+test_reject_degenerate_rank (test_core.GeometryTests.test_reject_degenerate_rank) ... ok
+test_zero_init_freezes_base_and_checkpoint_roundtrip (test_core.LoRATests.test_zero_init_freezes_base_and_checkpoint_roundtrip) ... ok
+test_all_stages_analysis_and_resume_after_interruption (test_core.PipelineTests.test_all_stages_analysis_and_resume_after_interruption) ... C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+ok
+test_frozen_and_head_controls_hold_encoder_fixed (test_core.PipelineTests.test_frozen_and_head_controls_hold_encoder_fixed) ... ok
+test_auxiliary_views_only_saved_at_declared_endpoints (test_robust.RobustEngineTests.test_auxiliary_views_only_saved_at_declared_endpoints) ... ok
+test_changed_completed_feature_is_rejected (test_robust.RobustEngineTests.test_changed_completed_feature_is_rejected) ... ok
+test_complete_suite_analysis_including_both_controls (test_robust.RobustEngineTests.test_complete_suite_analysis_including_both_controls) ... ok
+test_optimizer_step_resume_matches_uninterrupted_dropout_training (test_robust.RobustEngineTests.test_optimizer_step_resume_matches_uninterrupted_dropout_training) ... ok
+test_active_deterministic_job_name_prevents_duplicate_launch (test_robust.SchedulerTests.test_active_deterministic_job_name_prevents_duplicate_launch) ... ok
+test_bounded_serial_submissions_and_accepted_job_ledger (test_robust.SchedulerTests.test_bounded_serial_submissions_and_accepted_job_ledger) ... ok
+test_invalid_plan_names_cannot_traverse_paths (test_robust.SchedulerTests.test_invalid_plan_names_cannot_traverse_paths) ... ok
+test_deficits_fail_instead_of_duplicating (test_robust.StableDataTests.test_deficits_fail_instead_of_duplicating) ... ok
+test_role_does_not_depend_on_cohort_or_requested_counts (test_robust.StableDataTests.test_role_does_not_depend_on_cohort_or_requested_counts) ... ok
+test_sampling_seed_changes_rows_without_changing_roles (test_robust.StableDataTests.test_sampling_seed_changes_rows_without_changing_roles) ... ok
+test_calibration_matches_reference_training_shape (test_robust.SuiteDesignTests.test_calibration_matches_reference_training_shape) ... ok
+test_covariance_overlap_in_common_feature_coordinates (test_robust.SuiteDesignTests.test_covariance_overlap_in_common_feature_coordinates) ... ok
+test_large_matrix_iterative_svd_matches_dense_feature_subspace (test_robust.SuiteDesignTests.test_large_matrix_iterative_svd_matches_dense_feature_subspace) ... ok
+test_profile_counts_unique_seeds_and_run_paths (test_robust.SuiteDesignTests.test_profile_counts_unique_seeds_and_run_paths) ... ok
+test_replication_rule_does_not_count_duplicate_rows_as_seeds (test_robust.SuiteDesignTests.test_replication_rule_does_not_count_duplicate_rows_as_seeds) ... ok
+test_full_matrix_is_fifteen_trainings_and_two_controls (test_submission.SubmissionTests.test_full_matrix_is_fifteen_trainings_and_two_controls) ... ok
+test_reject_invalid_pbs_variable_separators (test_submission.SubmissionTests.test_reject_invalid_pbs_variable_separators) ... ok
+test_submissions_are_serial_and_recorded_incrementally (test_submission.SubmissionTests.test_submissions_are_serial_and_recorded_incrementally) ... ok
+test_real_tiny_llama (test_transformers_backend.ActualBackendTests.test_real_tiny_llama) ... skipped 'Matching Transformers/Qwen3 runtime unavailable locally'
+test_real_tiny_qwen3 (test_transformers_backend.ActualBackendTests.test_real_tiny_qwen3) ... skipped 'Matching Transformers/Qwen3 runtime unavailable locally'
+
+======================================================================
+ERROR: test_corrupt_retained_statistics_and_capsule_rejected (test_compact.CompactTests.test_corrupt_retained_statistics_and_capsule_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_compact.py", line 38, in setUp
+    self.f.run_engine(path,mode,self.f.make_model(mode))
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_core.py", line 237, in run_engine
+    engine.execute_run(self.cfg,model,self.packs,self.tokens,path,mode,"O1",101,"cpu",
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\h2\engine.py", line 338, in execute_run
+    extract(model, packs[task][split], layers,
+                   ~~~~~~~~~~~^^^^^^^
+KeyError: 'probe_a'
+
+======================================================================
+ERROR: test_full_joint_and_sensitivity_outputs_identical_after_release (test_compact.CompactTests.test_full_joint_and_sensitivity_outputs_identical_after_release)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_compact.py", line 38, in setUp
+    self.f.run_engine(path,mode,self.f.make_model(mode))
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_core.py", line 237, in run_engine
+    engine.execute_run(self.cfg,model,self.packs,self.tokens,path,mode,"O1",101,"cpu",
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\h2\engine.py", line 338, in execute_run
+    extract(model, packs[task][split], layers,
+                   ~~~~~~~~~~~^^^^^^^
+KeyError: 'probe_a'
+
+======================================================================
+ERROR: test_guard_and_zip_path_validation (test_compact.CompactTests.test_guard_and_zip_path_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_compact.py", line 38, in setUp
+    self.f.run_engine(path,mode,self.f.make_model(mode))
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_core.py", line 237, in run_engine
+    engine.execute_run(self.cfg,model,self.packs,self.tokens,path,mode,"O1",101,"cpu",
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\h2\engine.py", line 338, in execute_run
+    extract(model, packs[task][split], layers,
+                   ~~~~~~~~~~~^^^^^^^
+KeyError: 'probe_a'
+
+======================================================================
+ERROR: test_missing_archive_and_corrupt_original_prevent_release (test_compact.CompactTests.test_missing_archive_and_corrupt_original_prevent_release)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_compact.py", line 38, in setUp
+    self.f.run_engine(path,mode,self.f.make_model(mode))
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_core.py", line 237, in run_engine
+    engine.execute_run(self.cfg,model,self.packs,self.tokens,path,mode,"O1",101,"cpu",
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\h2\engine.py", line 338, in execute_run
+    extract(model, packs[task][split], layers,
+                   ~~~~~~~~~~~^^^^^^^
+KeyError: 'probe_a'
+
+======================================================================
+ERROR: test_pack_retry_and_submission_gate (test_compact.CompactTests.test_pack_retry_and_submission_gate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_compact.py", line 38, in setUp
+    self.f.run_engine(path,mode,self.f.make_model(mode))
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_core.py", line 237, in run_engine
+    engine.execute_run(self.cfg,model,self.packs,self.tokens,path,mode,"O1",101,"cpu",
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\h2\engine.py", line 338, in execute_run
+    extract(model, packs[task][split], layers,
+                   ~~~~~~~~~~~^^^^^^^
+KeyError: 'probe_a'
+
+======================================================================
+ERROR: test_release_requires_both_verified_acknowledgements (test_compact.CompactTests.test_release_requires_both_verified_acknowledgements)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_compact.py", line 38, in setUp
+    self.f.run_engine(path,mode,self.f.make_model(mode))
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_core.py", line 237, in run_engine
+    engine.execute_run(self.cfg,model,self.packs,self.tokens,path,mode,"O1",101,"cpu",
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\h2\engine.py", line 338, in execute_run
+    extract(model, packs[task][split], layers,
+                   ~~~~~~~~~~~^^^^^^^
+KeyError: 'probe_a'
+
+----------------------------------------------------------------------
+Ran 38 tests in 20.323s
+
+FAILED (errors=6, skipped=2)

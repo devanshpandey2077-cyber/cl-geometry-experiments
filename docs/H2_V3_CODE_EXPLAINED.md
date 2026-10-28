@@ -23,11 +23,13 @@ Several versions exist and must not be mixed together:
 | Version 3 | Delivered as `H2_Robust_Experiment_v3.zip`; server campaign names start with `h2v3_` | Registered suite builder, repeated data cohorts, learning audits, joint analysis and staged execution |
 | Compact derivative | Delivered as `H2_Compact_Workflow.zip`, containing `h2_compact_experiment/` | v3 plus verified analysis archives, laptop acknowledgement, controlled release and disk guards |
 
-At the repository revision inspected for this documentation, the executable
-source trees in GitHub are v2 and the legacy starter. This documentation commit
-does **not** publish the later v3/compact source trees. File paths such as
-`suite.py` and `h2/compact.py` below refer to those delivered later packages.
-Their commands are not drop-in commands for the v2 checkout.
+The repository now also publishes the later [v3 source](../h2_robust_experiment_v3/)
+and [compact derivative](../h2_compact_experiment/), together with their tests and
+available execution evidence. File paths such as `suite.py` and `h2/compact.py`
+below refer to those version-specific folders. Their commands are not drop-in
+commands for the v2 checkout. Public account-path substitutions and original
+manifest hashes are documented in each folder's PUBLICATION.md and the
+[publication provenance](../provenance/h2_20261028/).
 
 The compact package inspected for this guide has SHA256:
 
@@ -471,7 +473,7 @@ removing representations is the compact workflow's alternative.
 For this rank-16 attention-only 1.7B configuration, the adapter tensor payload
 across 600 LoRA boundary checkpoints is approximately 14.36 GiB. Primary
 bootstrap draws across 104 runs occupy about 0.14 GiB before archive overhead.
-The earlier 20–30 GiB compact laptop allowance includes additional inputs and
+The earlier 20â€“30 GiB compact laptop allowance includes additional inputs and
 outputs but is still a provisional budget, not a measured full-campaign size.
 
 ## 11. What the compact workflow changes
@@ -551,7 +553,10 @@ test does not satisfy that requirement by itself. Neither a job ID nor a
 
 The following v3 execution facts come from terminal output supplied in the
 research conversation. This documentation work did not connect to the H100
-server or independently retrieve its current run directories.
+server or independently retrieve its current run directories. The later
+publication recovered the supplied GPU console attachment and extracted its
+metrics; see the [dated record](EXPERIMENT_RECORD_2026-10-27.md). Native run
+configs, feature arrays, checkpoints and detailed geometry reports remain missing.
 
 | Item | Evidence/state |
 |---|---|

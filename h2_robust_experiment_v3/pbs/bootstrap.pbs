@@ -1,0 +1,24 @@
+#!/bin/bash
+#PBS -N h2_v3_setup
+#PBS -q cpuq
+#PBS -l select=1:ncpus=4:mem=16gb
+#PBS -l walltime=02:00:00
+#PBS -j oe
+set -euo pipefail
+: "${PBS_JOBID:?Use qsub}"
+cd "${PBS_O_WORKDIR:?Missing working directory}"
+test -f settings.env
+source settings.env
+mkdir -p logs
+log="logs/bootstrap.${PBS_JOBID}.log"
+ln -sfn "$(basename "$log")" logs/bootstrap.latest.log
+exec > "$log" 2>&1
+set +u
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+set -u
+# Preserve the working environment by cloning it into a new name.
+if ! conda run -n "${CONDA_ENV:-h2_h100_v3}" python -c 'import sys' >/dev/null 2>&1; then
+    conda create -y -n "${CONDA_ENV:-h2_h100_v3}" --clone "${H2_CLONE_ENV:-h2_h100}"
+fi
+bash pbs/setup.pbs
+echo 'SERVER SETUP COMPLETE; inspect logs/setup.latest.log too'

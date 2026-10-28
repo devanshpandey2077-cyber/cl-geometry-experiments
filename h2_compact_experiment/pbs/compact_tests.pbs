@@ -1,0 +1,11 @@
+#!/bin/bash
+#PBS -N h2_compact_tests
+#PBS -q cpuq
+#PBS -l select=1:ncpus=8:mem=32gb
+#PBS -l walltime=00:30:00
+#PBS -j oe
+H2_LOG_KIND=compact_tests H2_THREADS=8
+source "$PBS_O_WORKDIR/pbs/common.sh"
+export CUDA_VISIBLE_DEVICES=""
+for script in pbs/*.pbs pbs/*.sh; do bash -n "$script"; done
+python -m unittest discover -s tests -v

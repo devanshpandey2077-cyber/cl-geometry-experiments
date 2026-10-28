@@ -1,0 +1,29 @@
+{
+  "gpu_runs": 104,
+  "cells": 2,
+  "train_per_task": 20000,
+  "epochs": 2,
+  "max_steps_per_task": null,
+  "seeds_per_cell": 10,
+  "orders_per_cell": 5,
+  "budget": {
+    "gpu_runs": 104,
+    "main_optimizer_updates": 1250000,
+    "uncompressed_feature_GiB": 158.69140625,
+    "full_tuning_boundary_checkpoint_GiB": 0.0,
+    "measured_training_hours_excluding_evaluation_probing_analysis": null,
+    "cells_without_matching_measured_timing": [
+      "qwen1.7b_d20261031_reference",
+      "qwen1.7b_d20261107_reference"
+    ],
+    "warning": "Storage excludes model caches, token packs, LoRA/progress checkpoints, plots and analysis. No walltime or memory fit guarantee. Probe bootstrap can dominate CPU cost."
+  },
+  "unchanged_modules": {
+    "geometry.py": true,
+    "analyze.py": true,
+    "lora.py": true,
+    "prompts.py": true,
+    "data.py": true,
+    "robust_data.py": true
+  }
+}

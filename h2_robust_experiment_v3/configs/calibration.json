@@ -1,0 +1,35 @@
+{
+  "extends": "full.json",
+  "name": "calibration",
+  "purpose": "exploratory",
+  "data": {
+    "partition": "development",
+    "name": "h2_v2_calibration",
+    "seed": 20261020,
+    "sizes": {
+      "train": 2000,
+      "validation": 300,
+      "probe_a": 300,
+      "probe_b": 300,
+      "test": 500
+    }
+  },
+  "training": {
+    "max_steps_per_task": 200,
+    "eval_splits": [
+      "validation"
+    ]
+  },
+  "features": {
+    "probe_splits": [
+      "probe_a"
+    ]
+  },
+  "analysis": {
+    "probe": "probe_a",
+    "bootstrap": 100
+  },
+  "seeds": [
+    17
+  ]
+}

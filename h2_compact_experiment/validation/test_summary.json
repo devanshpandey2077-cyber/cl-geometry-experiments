@@ -1,0 +1,8 @@
+{
+  "discovered": 41,
+  "passed": 39,
+  "skipped": 2,
+  "failed": 0,
+  "scope": "CPU fixtures; SSH/SCP simulated; actual H100 validation pending",
+  "skips": "Matching Transformers/Qwen3 runtime unavailable locally"
+}

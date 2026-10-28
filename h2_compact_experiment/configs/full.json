@@ -1,0 +1,123 @@
+{
+  "name": "full",
+  "purpose": "confirmation",
+  "data": {
+    "partition": "confirmation",
+    "name": "h2_v2_full",
+    "tasks": [
+      "yelp",
+      "qqp",
+      "qnli",
+      "mnli",
+      "ag_news"
+    ],
+    "seed": 20261019,
+    "sizes": {
+      "train": 10000,
+      "validation": 1000,
+      "probe_a": 1000,
+      "probe_b": 1000,
+      "test": 2000
+    },
+    "candidate_multiplier": 3,
+    "near_threshold": 0.85,
+    "minhash_permutations": 64,
+    "max_group_size": 128
+  },
+  "model": {
+    "repo": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "precision": "bfloat16"
+  },
+  "training": {
+    "epochs": 2,
+    "max_steps_per_task": null,
+    "microbatch": 2,
+    "gradient_accumulation": 8,
+    "eval_batch": 4,
+    "max_length": 512,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1,
+    "warmup_fraction": 0.05,
+    "gradient_checkpointing": true,
+    "eval_splits": [
+      "validation",
+      "test"
+    ],
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "targets": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj"
+      ]
+    },
+    "optimizer_policy": "reset_each_task"
+  },
+  "features": {
+    "layers": [
+      6,
+      14,
+      22
+    ],
+    "primary_layer": 14,
+    "poolings": [
+      "content",
+      "answer"
+    ],
+    "primary_pooling": "content",
+    "probe_splits": [
+      "probe_a",
+      "probe_b"
+    ],
+    "prompt_variant": "standard"
+  },
+  "analysis": {
+    "rank": 16,
+    "sensitivity_ranks": [
+      8,
+      32
+    ],
+    "probe": "probe_b",
+    "pooling": "content",
+    "bootstrap": 1000,
+    "bootstrap_seed": 62026,
+    "alpha": 0.05,
+    "min_gap": 0.01,
+    "control_tolerance": 0.0001
+  },
+  "orders": {
+    "O1": [
+      "yelp",
+      "qqp",
+      "qnli",
+      "mnli",
+      "ag_news"
+    ],
+    "O2": [
+      "ag_news",
+      "mnli",
+      "qnli",
+      "qqp",
+      "yelp"
+    ],
+    "O3": [
+      "qnli",
+      "yelp",
+      "ag_news",
+      "qqp",
+      "mnli"
+    ]
+  },
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ]
+}

@@ -1,0 +1,25 @@
+#!/bin/bash
+#PBS -N h2_v3_cpu
+#PBS -q cpuq
+#PBS -l select=1:ncpus=8:mem=64gb
+#PBS -l walltime=24:00:00
+#PBS -j oe
+H2_LOG_KIND="${H2_ACTION:-prepare}" H2_THREADS=8
+source "$PBS_O_WORKDIR/pbs/common.sh"
+export CUDA_VISIBLE_DEVICES=""
+action="${H2_ACTION:-prepare}"
+case "$action" in
+ prepare|freeze|analyze|sensitivity|budget) ;;
+ *) echo "Invalid H2_ACTION"; exit 2 ;;
+esac
+if [[ "$action" != prepare ]]; then
+    export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_DATASETS_OFFLINE=1
+fi
+args=("$action" --name "${H2_PLAN:?Missing plan}")
+if [[ -n "${H2_CALIBRATION_PLAN:-}" && ( "$action" == freeze || "$action" == budget ) ]]; then
+    args+=(--calibration-plan "$H2_CALIBRATION_PLAN")
+fi
+if [[ -n "${H2_CELL:-}" && ( "$action" == analyze || "$action" == sensitivity ) ]]; then
+    args+=(--cell "$H2_CELL")
+fi
+python suite.py "${args[@]}"

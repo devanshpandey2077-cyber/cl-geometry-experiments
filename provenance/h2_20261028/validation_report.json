@@ -1,0 +1,54 @@
+{
+  "published_at": "2026-10-28",
+  "scope": "publication checks only; no new unit-test/H100 execution",
+  "python_files_parsed": 57,
+  "documentation_link_checks": [
+    "README.md",
+    "docs/TESTING_INDEX.md",
+    "docs/EXPERIMENT_RECORD_2026-10-27.md",
+    "docs/H2_V3_CODE_EXPLAINED.md",
+    "results/h2v3_smoke_r1/README.md",
+    "results/validation/README.md"
+  ],
+  "broken_links": [],
+  "credential_and_private_identifier_patterns": "no matches",
+  "metric_rows_verified": 180,
+  "unchanged_mathematical_modules": [
+    "v3/geometry.py",
+    "v3/analyze.py",
+    "v3/lora.py",
+    "v3/prompts.py",
+    "v3/data.py",
+    "v3/robust_data.py",
+    "compact/geometry.py",
+    "compact/analyze.py",
+    "compact/lora.py",
+    "compact/prompts.py",
+    "compact/data.py",
+    "compact/robust_data.py"
+  ],
+  "public_package_manifest_checks": {
+    "v3": 55,
+    "compact": 64
+  },
+  "preserved_test_history": {
+    "v3": {
+      "discovered": 32,
+      "passed": 30,
+      "skipped": 2
+    },
+    "compact_development": {
+      "discovered": 38,
+      "errors": 6,
+      "skipped": 2
+    },
+    "compact_focused": {
+      "passed": 8
+    },
+    "compact_final": {
+      "discovered": 41,
+      "passed": 39,
+      "skipped": 2
+    }
+  }
+}

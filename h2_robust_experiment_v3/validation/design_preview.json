@@ -1,0 +1,147 @@
+{
+  "scope": "Design preview only; no jobs, assets, datasets or models executed",
+  "profiles": {
+    "smoke": {
+      "cells": 1,
+      "runs": 3,
+      "trained_trajectories": 1,
+      "budget": {
+        "gpu_runs": 3,
+        "main_optimizer_updates": 25,
+        "uncompressed_feature_GiB": 0.18310546875,
+        "full_tuning_boundary_checkpoint_GiB": 0.0,
+        "measured_training_hours_excluding_evaluation_probing_analysis": null,
+        "cells_without_matching_measured_timing": [
+          "qwen1.7b_d20261031_reference"
+        ],
+        "warning": "Storage excludes model caches, token packs, LoRA/progress checkpoints, plots and analysis. No walltime or memory fit guarantee. Probe bootstrap can dominate CPU cost."
+      }
+    },
+    "calibration": {
+      "cells": 2,
+      "runs": 6,
+      "trained_trajectories": 2,
+      "budget": {
+        "gpu_runs": 6,
+        "main_optimizer_updates": 1000,
+        "uncompressed_feature_GiB": 2.9754638671875,
+        "full_tuning_boundary_checkpoint_GiB": 0.0,
+        "measured_training_hours_excluding_evaluation_probing_analysis": null,
+        "cells_without_matching_measured_timing": [
+          "qwen4b_d20261031_reference",
+          "qwen8b_d20261031_reference"
+        ],
+        "warning": "Storage excludes model caches, token packs, LoRA/progress checkpoints, plots and analysis. No walltime or memory fit guarantee. Probe bootstrap can dominate CPU cost."
+      }
+    },
+    "core": {
+      "cells": 1,
+      "runs": 17,
+      "trained_trajectories": 15,
+      "budget": {
+        "gpu_runs": 17,
+        "main_optimizer_updates": 93750,
+        "uncompressed_feature_GiB": 32.4249267578125,
+        "full_tuning_boundary_checkpoint_GiB": 0.0,
+        "measured_training_hours_excluding_evaluation_probing_analysis": null,
+        "cells_without_matching_measured_timing": [
+          "qwen4b_d20261031_reference"
+        ],
+        "warning": "Storage excludes model caches, token packs, LoRA/progress checkpoints, plots and analysis. No walltime or memory fit guarantee. Probe bootstrap can dominate CPU cost."
+      }
+    },
+    "primary": {
+      "cells": 4,
+      "runs": 208,
+      "trained_trajectories": 200,
+      "budget": {
+        "gpu_runs": 208,
+        "main_optimizer_updates": 2500000,
+        "uncompressed_feature_GiB": 515.7470703125,
+        "full_tuning_boundary_checkpoint_GiB": 0.0,
+        "measured_training_hours_excluding_evaluation_probing_analysis": null,
+        "cells_without_matching_measured_timing": [
+          "qwen4b_d20261031_reference",
+          "qwen4b_d20261107_reference",
+          "qwen8b_d20261031_reference",
+          "qwen8b_d20261107_reference"
+        ],
+        "warning": "Storage excludes model caches, token packs, LoRA/progress checkpoints, plots and analysis. No walltime or memory fit guarantee. Probe bootstrap can dominate CPU cost."
+      }
+    },
+    "stress": {
+      "cells": 11,
+      "runs": 121,
+      "trained_trajectories": 99,
+      "budget": {
+        "gpu_runs": 121,
+        "main_optimizer_updates": 1237500,
+        "uncompressed_feature_GiB": 230.7891845703125,
+        "full_tuning_boundary_checkpoint_GiB": 0.0,
+        "measured_training_hours_excluding_evaluation_probing_analysis": null,
+        "cells_without_matching_measured_timing": [
+          "qwen4b_d20261031_adapter32",
+          "qwen4b_d20261031_adapter8",
+          "qwen4b_d20261031_dropout10",
+          "qwen4b_d20261031_length1024",
+          "qwen4b_d20261031_length256",
+          "qwen4b_d20261031_lr_high",
+          "qwen4b_d20261031_lr_low",
+          "qwen4b_d20261031_no_dropout",
+          "qwen4b_d20261031_one_epoch",
+          "qwen4b_d20261031_reference",
+          "qwen4b_d20261031_three_epochs"
+        ],
+        "warning": "Storage excludes model caches, token packs, LoRA/progress checkpoints, plots and analysis. No walltime or memory fit guarantee. Probe bootstrap can dominate CPU cost."
+      }
+    },
+    "replication": {
+      "cells": 1,
+      "runs": 52,
+      "trained_trajectories": 50,
+      "budget": {
+        "gpu_runs": 52,
+        "main_optimizer_updates": 625000,
+        "uncompressed_feature_GiB": 79.345703125,
+        "full_tuning_boundary_checkpoint_GiB": 0.0,
+        "measured_training_hours_excluding_evaluation_probing_analysis": null,
+        "cells_without_matching_measured_timing": [
+          "smollm1.7b_d20261031_reference"
+        ],
+        "warning": "Storage excludes model caches, token packs, LoRA/progress checkpoints, plots and analysis. No walltime or memory fit guarantee. Probe bootstrap can dominate CPU cost."
+      }
+    },
+    "scale14b": {
+      "cells": 1,
+      "runs": 17,
+      "trained_trajectories": 15,
+      "budget": {
+        "gpu_runs": 17,
+        "main_optimizer_updates": 187500,
+        "uncompressed_feature_GiB": 64.849853515625,
+        "full_tuning_boundary_checkpoint_GiB": 0.0,
+        "measured_training_hours_excluding_evaluation_probing_analysis": null,
+        "cells_without_matching_measured_timing": [
+          "qwen14b_d20261031_reference"
+        ],
+        "warning": "Storage excludes model caches, token packs, LoRA/progress checkpoints, plots and analysis. No walltime or memory fit guarantee. Probe bootstrap can dominate CPU cost."
+      }
+    },
+    "full_tuning": {
+      "cells": 1,
+      "runs": 17,
+      "trained_trajectories": 15,
+      "budget": {
+        "gpu_runs": 17,
+        "main_optimizer_updates": 187500,
+        "uncompressed_feature_GiB": 25.93994140625,
+        "full_tuning_boundary_checkpoint_GiB": 569.9694156646729,
+        "measured_training_hours_excluding_evaluation_probing_analysis": null,
+        "cells_without_matching_measured_timing": [
+          "qwen1.7b_d20261031_reference"
+        ],
+        "warning": "Storage excludes model caches, token packs, LoRA/progress checkpoints, plots and analysis. No walltime or memory fit guarantee. Probe bootstrap can dominate CPU cost."
+      }
+    }
+  }
+}

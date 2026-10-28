@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -N h2_setup
+#PBS -q cpuq
+#PBS -l select=1:ncpus=4:mem=8gb
+#PBS -l walltime=01:00:00
+#PBS -j oe
+H2_LOG_KIND=setup H2_THREADS=4
+source "$PBS_O_WORKDIR/pbs/common.sh"
+export CUDA_VISIBLE_DEVICES=""
+python -m pip install -r requirements.txt
+python -m pip check
+for file in pbs/*.pbs pbs/*.sh; do bash -n "$file"; done
+python -m pip freeze > logs/installed-packages.txt
+export H2_REQUIRE_BACKEND_TESTS=1
+python -m unittest discover -s tests -v
+echo 'SETUP AND CPU TESTS COMPLETE'

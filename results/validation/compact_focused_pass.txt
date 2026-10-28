@@ -1,0 +1,50 @@
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.3.5 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "<string>", line 1, in <module>
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 322, in discover
+    tests = list(self._find_tests(start_dir, pattern))
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 377, in _find_tests
+    tests, should_recurse = self._find_test_path(full_path, pattern)
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 407, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 350, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_compact.py", line 14, in <module>
+    import test_core
+  File "C:\Users\YOUR_LOCAL_USER\.codex\.chatgpt-projects\g-p-6ac3fc8a54108191a281d9eb60dde722\outputs\H2_Compact_Workflow\h2_compact_experiment\tests\test_core.py", line 12, in <module>
+    import torch
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 1382, in <module>
+    from .functional import *  # noqa: F403
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\functional.py", line 7, in <module>
+    import torch.nn.functional as F
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\__init__.py", line 35, in <module>
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\transformer.py", line 20, in <module>
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at ..\torch\csrc\utils\tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+test_corrupt_retained_statistics_and_capsule_rejected (test_compact.CompactTests.test_corrupt_retained_statistics_and_capsule_rejected) ... ok
+test_full_joint_and_sensitivity_outputs_identical_after_release (test_compact.CompactTests.test_full_joint_and_sensitivity_outputs_identical_after_release) ... C:\Users\YOUR_LOCAL_USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+ok
+test_guard_and_zip_path_validation (test_compact.CompactTests.test_guard_and_zip_path_validation) ... ok
+test_laptop_client_verifies_archives_and_acknowledges_without_deletion (test_compact.CompactTests.test_laptop_client_verifies_archives_and_acknowledges_without_deletion) ... ok
+test_missing_archive_and_corrupt_original_prevent_release (test_compact.CompactTests.test_missing_archive_and_corrupt_original_prevent_release) ... ok
+test_pack_retry_and_submission_gate (test_compact.CompactTests.test_pack_retry_and_submission_gate) ... ok
+test_release_requires_both_verified_acknowledgements (test_compact.CompactTests.test_release_requires_both_verified_acknowledgements) ... ok
+test_restore_retained_statistics_from_verified_laptop_archive (test_compact.CompactTests.test_restore_retained_statistics_from_verified_laptop_archive) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 57.603s
+
+OK

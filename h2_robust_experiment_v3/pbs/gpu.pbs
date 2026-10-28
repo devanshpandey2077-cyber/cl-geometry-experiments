@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -N h2_gpu
+#PBS -q workq
+#PBS -l select=1:ncpus=4:mem=32gb
+#PBS -l walltime=24:00:00
+#PBS -j oe
+H2_LOG_KIND=gpu H2_THREADS=4
+source "$PBS_O_WORKDIR/pbs/common.sh"
+export MIG_UUID="${MIG_UUID:-}"
+if [[ -z "${CUDA_VISIBLE_DEVICES:-}" ]]; then
+    export CUDA_VISIBLE_DEVICES="$MIG_UUID"
+fi
+export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_DATASETS_OFFLINE=1
+args=(--config "${H2_CONFIG:-configs/smoke.json}" --mode "${H2_MODE:-lora}"
+      --order "${H2_ORDER:-O1}" --seed "${H2_SEED:-101}"
+      --campaign "${H2_CAMPAIGN:-first_smoke}")
+if [[ "${H2_RESUME:-0}" == 1 ]]; then args+=(--resume); fi
+python -m h2.engine "${args[@]}"

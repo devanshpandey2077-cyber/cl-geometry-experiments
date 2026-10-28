@@ -1,0 +1,53 @@
+{
+  "runs": [
+    {
+      "run_id": "frozen_O1_s17",
+      "mode": "frozen",
+      "job_id": "37969.master",
+      "final_test_accuracy": {
+        "yelp": 0.5,
+        "qqp": 0.575,
+        "qnli": 0.5,
+        "mnli": 0.375,
+        "ag_news": 0.35
+      },
+      "final_mean_test_accuracy": 0.45999999999999996,
+      "backward_transfer": 0.0,
+      "formula": "mean over first four tasks of final accuracy minus accuracy immediately after own training",
+      "source": "visible stage metrics in gpu_console_excerpt.txt; not a native run report"
+    },
+    {
+      "run_id": "head_O1_s17",
+      "mode": "head",
+      "job_id": "37970.master",
+      "final_test_accuracy": {
+        "yelp": 0.525,
+        "qqp": 0.35,
+        "qnli": 0.55,
+        "mnli": 0.35,
+        "ag_news": 0.2
+      },
+      "final_mean_test_accuracy": 0.39499999999999996,
+      "backward_transfer": -2.7755575615628914e-17,
+      "formula": "mean over first four tasks of final accuracy minus accuracy immediately after own training",
+      "source": "visible stage metrics in gpu_console_excerpt.txt; not a native run report"
+    },
+    {
+      "run_id": "lora_O1_s17",
+      "mode": "lora",
+      "job_id": "37971.master",
+      "final_test_accuracy": {
+        "yelp": 0.55,
+        "qqp": 0.55,
+        "qnli": 0.575,
+        "mnli": 0.5,
+        "ag_news": 0.375
+      },
+      "final_mean_test_accuracy": 0.51,
+      "backward_transfer": -0.09375,
+      "formula": "mean over first four tasks of final accuracy minus accuracy immediately after own training",
+      "source": "visible stage metrics in gpu_console_excerpt.txt; not a native run report"
+    }
+  ],
+  "scope": "small functionality smoke; restricted answer-code accuracy is not geometry evidence"
+}

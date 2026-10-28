@@ -1,0 +1,1616 @@
+{
+  "published_at": "2026-10-28",
+  "event_window": "2026-10-26 source validation and 2026-10-27 reported HPC/compact work",
+  "packages": [
+    {
+      "kind": "v3",
+      "archive_name": "H2_Robust_Experiment_v3.zip",
+      "original_bytes": 117763,
+      "original_sha256": "684861289013aaff86312305a00c483ac433d4f19c4885ea19b9f8daff1cc298",
+      "original_manifest_entries": 55,
+      "published_folder": "h2_robust_experiment_v3",
+      "status": "delivery source snapshot, not recovered exact server checkout"
+    },
+    {
+      "kind": "compact",
+      "archive_name": "H2_Compact_Workflow.zip",
+      "original_bytes": 141743,
+      "original_sha256": "4b9bb32331c073809f790e8b8b654a8b6e0bcefaead055679d635043838b852e",
+      "original_manifest_entries": 63,
+      "published_folder": "h2_compact_experiment",
+      "status": "delivery source snapshot, not recovered exact server checkout"
+    }
+  ],
+  "files": [
+    {
+      "path": "h2_robust_experiment_v3/.gitignore",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::.gitignore",
+      "original_sha256": "b808f2132bce4efacb37de9a7ca8d1f41be1e9d503ea1b3b872bcddc158b7a95",
+      "original_bytes": 122,
+      "published_sha256": "b808f2132bce4efacb37de9a7ca8d1f41be1e9d503ea1b3b872bcddc158b7a95",
+      "published_bytes": 122,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/CHANGELOG.md",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::CHANGELOG.md",
+      "original_sha256": "85832e0311685996cd9df0ed528d32333b1174ccd4568890eac91ab798026026",
+      "original_bytes": 1097,
+      "published_sha256": "85832e0311685996cd9df0ed528d32333b1174ccd4568890eac91ab798026026",
+      "published_bytes": 1097,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/configs/calibration.json",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::configs/calibration.json",
+      "original_sha256": "b03e95a7eb81098b1c4082eef35d3dd9b84299dd8da7ddba9d3a011578e7a586",
+      "original_bytes": 569,
+      "published_sha256": "b03e95a7eb81098b1c4082eef35d3dd9b84299dd8da7ddba9d3a011578e7a586",
+      "published_bytes": 569,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/configs/full.json",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::configs/full.json",
+      "original_sha256": "586440fae3b59f0d8fbb4bd7bda42e9f6ed2c2463096c90e3248b5c63209f024",
+      "original_bytes": 2119,
+      "published_sha256": "586440fae3b59f0d8fbb4bd7bda42e9f6ed2c2463096c90e3248b5c63209f024",
+      "published_bytes": 2119,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/configs/paws_replication.json",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::configs/paws_replication.json",
+      "original_sha256": "d0a9e301911fe7a7e274d596b8fca1500c24017640d0d4a50933089125867c15",
+      "original_bytes": 667,
+      "published_sha256": "d0a9e301911fe7a7e274d596b8fca1500c24017640d0d4a50933089125867c15",
+      "published_bytes": 667,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/configs/smoke.json",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::configs/smoke.json",
+      "original_sha256": "5f967d3a2982aeda73bb9e2e52e2b869adeab4dd92098889d6fdcb55044c5b7a",
+      "original_bytes": 563,
+      "published_sha256": "5f967d3a2982aeda73bb9e2e52e2b869adeab4dd92098889d6fdcb55044c5b7a",
+      "published_bytes": 563,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/configs/smollm2.json",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::configs/smollm2.json",
+      "original_sha256": "ec8140c6909d132084f72176b15cace1ad9f5fa4f208afef353c881ee8613b50",
+      "original_bytes": 227,
+      "published_sha256": "ec8140c6909d132084f72176b15cace1ad9f5fa4f208afef353c881ee8613b50",
+      "published_bytes": 227,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/doctor.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::doctor.py",
+      "original_sha256": "e9236c8195d60ea70e778fbae45c6b050e35a393e351c830a92ac499e26b91f0",
+      "original_bytes": 1770,
+      "published_sha256": "e9236c8195d60ea70e778fbae45c6b050e35a393e351c830a92ac499e26b91f0",
+      "published_bytes": 1770,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/FULL_PIPELINE.md",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::FULL_PIPELINE.md",
+      "original_sha256": "c64491c54b71cf9adf8154cb13f1a9e3d1c39b420713b7a32307cbaaba1130d7",
+      "original_bytes": 22911,
+      "published_sha256": "536ade8028a4a1bd2b7785333ffb53e58d42036cb23d94b0384682bb5d2bccaa",
+      "published_bytes": 22943,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/__init__.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/__init__.py",
+      "original_sha256": "a05d021f9561fed02827b7bdbb9ba0f8090e3274c20c6e793166841458093b21",
+      "original_bytes": 102,
+      "published_sha256": "a05d021f9561fed02827b7bdbb9ba0f8090e3274c20c6e793166841458093b21",
+      "published_bytes": 102,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/analyze.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/analyze.py",
+      "original_sha256": "fd0b2c9a5ac09a576854e77e9f41a6f312603cacf5eeafebb4c1cd4cdca9d380",
+      "original_bytes": 18533,
+      "published_sha256": "fd0b2c9a5ac09a576854e77e9f41a6f312603cacf5eeafebb4c1cd4cdca9d380",
+      "published_bytes": 18533,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/checkpoints.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/checkpoints.py",
+      "original_sha256": "2174b448ca1b4e09ceb061c0bda77816728e3216c0c09321f18a9ccb583f82a0",
+      "original_bytes": 1888,
+      "published_sha256": "2174b448ca1b4e09ceb061c0bda77816728e3216c0c09321f18a9ccb583f82a0",
+      "published_bytes": 1888,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/common.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/common.py",
+      "original_sha256": "5eef3f0524d21f6d8908a9d493e05016c5eb16db09272ae79064c8e70f9e0a65",
+      "original_bytes": 5385,
+      "published_sha256": "5eef3f0524d21f6d8908a9d493e05016c5eb16db09272ae79064c8e70f9e0a65",
+      "published_bytes": 5385,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/data.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/data.py",
+      "original_sha256": "99c8a5aea5902770049234405072b96e180cecf749fe47044240b50bfb8053f9",
+      "original_bytes": 11032,
+      "published_sha256": "99c8a5aea5902770049234405072b96e180cecf749fe47044240b50bfb8053f9",
+      "published_bytes": 11032,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/engine.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/engine.py",
+      "original_sha256": "0977b927250e383018bb01a17f19a03d7ee5a10b3c5d23d7a07e14169c5eefcd",
+      "original_bytes": 23012,
+      "published_sha256": "0977b927250e383018bb01a17f19a03d7ee5a10b3c5d23d7a07e14169c5eefcd",
+      "published_bytes": 23012,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/geometry.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/geometry.py",
+      "original_sha256": "9a9627f4b303318952f45d8732ed39eb7b92890dc8eca8d5342598cc7078c1f7",
+      "original_bytes": 5721,
+      "published_sha256": "9a9627f4b303318952f45d8732ed39eb7b92890dc8eca8d5342598cc7078c1f7",
+      "published_bytes": 5721,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/gpu.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/gpu.py",
+      "original_sha256": "22af67045ae5cc4bb2b738bf16cbd5d5a5ae8cc7e6fac4429a6141da0936ca81",
+      "original_bytes": 1805,
+      "published_sha256": "22af67045ae5cc4bb2b738bf16cbd5d5a5ae8cc7e6fac4429a6141da0936ca81",
+      "published_bytes": 1805,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/lora.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/lora.py",
+      "original_sha256": "9fc0e56eda85af490adc7a2adf672da200b7e3985d7f0652c90116a0948f0983",
+      "original_bytes": 2819,
+      "published_sha256": "9fc0e56eda85af490adc7a2adf672da200b7e3985d7f0652c90116a0948f0983",
+      "published_bytes": 2819,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/plotting.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/plotting.py",
+      "original_sha256": "7549af22574431163ee01784c8e03d96650d7dce5edc2d7bf9cc4afac6ea4c05",
+      "original_bytes": 2941,
+      "published_sha256": "7549af22574431163ee01784c8e03d96650d7dce5edc2d7bf9cc4afac6ea4c05",
+      "published_bytes": 2941,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/prepare.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/prepare.py",
+      "original_sha256": "25ca1657ed6bef724689cbb0fef103f7f1835de77701fdcf6b845ee85fc5c701",
+      "original_bytes": 10375,
+      "published_sha256": "25ca1657ed6bef724689cbb0fef103f7f1835de77701fdcf6b845ee85fc5c701",
+      "published_bytes": 10375,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/prompts.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/prompts.py",
+      "original_sha256": "e75681620727ab8cea5442c36241a0fcbe134055a1676338201093e0087fba87",
+      "original_bytes": 7033,
+      "published_sha256": "e75681620727ab8cea5442c36241a0fcbe134055a1676338201093e0087fba87",
+      "published_bytes": 7033,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/robust_data.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/robust_data.py",
+      "original_sha256": "417c5efb21079734b24697aaaf8ee2af0848f42af648669a5c4ecc864d9a6311",
+      "original_bytes": 1926,
+      "published_sha256": "417c5efb21079734b24697aaaf8ee2af0848f42af648669a5c4ecc864d9a6311",
+      "published_bytes": 1926,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/suite_analysis.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/suite_analysis.py",
+      "original_sha256": "6cffa97e6df055a4ef6b5fc2a52628c62b69882ad26c30738f461210dd29a284",
+      "original_bytes": 13135,
+      "published_sha256": "6cffa97e6df055a4ef6b5fc2a52628c62b69882ad26c30738f461210dd29a284",
+      "published_bytes": 13135,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/h2/tasks.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::h2/tasks.py",
+      "original_sha256": "b106e5853e4c85025a45958608d4f556b51dbb49c202e5ab5b5ff1f84e582a12",
+      "original_bytes": 1396,
+      "published_sha256": "b106e5853e4c85025a45958608d4f556b51dbb49c202e5ab5b5ff1f84e582a12",
+      "published_bytes": 1396,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/H2_CODE_EXPLAINED.md",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::H2_CODE_EXPLAINED.md",
+      "original_sha256": "8f157395975fcd41d00592810196a1b919b6c3b6dda01efd9076c4743907c611",
+      "original_bytes": 37664,
+      "published_sha256": "8f157395975fcd41d00592810196a1b919b6c3b6dda01efd9076c4743907c611",
+      "published_bytes": 37664,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/pbs/analyze.pbs",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::pbs/analyze.pbs",
+      "original_sha256": "e61054fbec6b55fc0fdef804d42767541eb0a0b8e2dfdebbf21b98d1d23be038",
+      "original_bytes": 765,
+      "published_sha256": "e61054fbec6b55fc0fdef804d42767541eb0a0b8e2dfdebbf21b98d1d23be038",
+      "published_bytes": 765,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/pbs/bootstrap.pbs",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::pbs/bootstrap.pbs",
+      "original_sha256": "13f0a604d0434972e3eb7e736a3d29accf9d96b0724378ae9a47f0ff4865c672",
+      "original_bytes": 774,
+      "published_sha256": "13f0a604d0434972e3eb7e736a3d29accf9d96b0724378ae9a47f0ff4865c672",
+      "published_bytes": 774,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/pbs/common.sh",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::pbs/common.sh",
+      "original_sha256": "63c74cad8e264887a151e644b981f37ae2e1fbed54f4dfb6325886e951c2d394",
+      "original_bytes": 1018,
+      "published_sha256": "faced592a8e6cca28a94359284438202f86b8460d0b7514ddf9d9a2078f432d7",
+      "published_bytes": 1020,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/pbs/gpu.pbs",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::pbs/gpu.pbs",
+      "original_sha256": "febdc9dece9730a4a7aa0c26ee44c780a796e891ae958bdc0f7e0d4b79503b82",
+      "original_bytes": 646,
+      "published_sha256": "febdc9dece9730a4a7aa0c26ee44c780a796e891ae958bdc0f7e0d4b79503b82",
+      "published_bytes": 646,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/pbs/prepare.pbs",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::pbs/prepare.pbs",
+      "original_sha256": "b13cf279fa2eefd3c33dfdecbd7dfa727c9ea15481fec467f54a3d43863b5df1",
+      "original_bytes": 344,
+      "published_sha256": "b13cf279fa2eefd3c33dfdecbd7dfa727c9ea15481fec467f54a3d43863b5df1",
+      "published_bytes": 344,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/pbs/setup.pbs",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::pbs/setup.pbs",
+      "original_sha256": "fa19a2c5308e79a13867f439bef64f9eff99a34805812972320c44cdee7bba75",
+      "original_bytes": 492,
+      "published_sha256": "fa19a2c5308e79a13867f439bef64f9eff99a34805812972320c44cdee7bba75",
+      "published_bytes": 492,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/pbs/statistics.pbs",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::pbs/statistics.pbs",
+      "original_sha256": "e8ab7f7da1ef628ba967c9127edade820c79657963785db99b413865d710a07a",
+      "original_bytes": 284,
+      "published_sha256": "e8ab7f7da1ef628ba967c9127edade820c79657963785db99b413865d710a07a",
+      "published_bytes": 284,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/pbs/suite_cpu.pbs",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::pbs/suite_cpu.pbs",
+      "original_sha256": "1c90e22d609f0b471827f89d27578baa19b7754a6438e61c759462ed61eeade0",
+      "original_bytes": 839,
+      "published_sha256": "1c90e22d609f0b471827f89d27578baa19b7754a6438e61c759462ed61eeade0",
+      "published_bytes": 839,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/pbs/suite_gpu.pbs",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::pbs/suite_gpu.pbs",
+      "original_sha256": "18a04d8d4c5d01823ea43c830d292d5e2c85e2cff3f06dc552114a49a44b22b4",
+      "original_bytes": 522,
+      "published_sha256": "18a04d8d4c5d01823ea43c830d292d5e2c85e2cff3f06dc552114a49a44b22b4",
+      "published_bytes": 522,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/PROTOCOL.md",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::PROTOCOL.md",
+      "original_sha256": "c312e6e45616c6604f187ad174c8cb212f9297dfd4fa2c8c8f753174b1628883",
+      "original_bytes": 12464,
+      "published_sha256": "c312e6e45616c6604f187ad174c8cb212f9297dfd4fa2c8c8f753174b1628883",
+      "published_bytes": 12464,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/README.md",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::README.md",
+      "original_sha256": "f09ab12fdd6be4ee7f824896f96c09b74c882738a3ad7bbc266ded72f6394d5e",
+      "original_bytes": 4374,
+      "published_sha256": "f09ab12fdd6be4ee7f824896f96c09b74c882738a3ad7bbc266ded72f6394d5e",
+      "published_bytes": 4374,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/requirements.txt",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::requirements.txt",
+      "original_sha256": "f1a5415b9ba7f989d1bb32baec4f6b5f60f38dc10cd10e6d8ae4a30ef5684574",
+      "original_bytes": 236,
+      "published_sha256": "f1a5415b9ba7f989d1bb32baec4f6b5f60f38dc10cd10e6d8ae4a30ef5684574",
+      "published_bytes": 236,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/settings.env.example",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::settings.env.example",
+      "original_sha256": "c1f9df47e7653153e2161d5b4d14fcb1fec2a1c038c43fb316df65b66b4c3c00",
+      "original_bytes": 533,
+      "published_sha256": "ccb03b5ac78e8f3b0f73f20628e6f0a4bd5ebf08c623b628075fe62e3c69c1b8",
+      "published_bytes": 535,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "provenance/h2_20261028/original_v3_source_manifest.json",
+      "kind": "original_package_manifest",
+      "source": "H2_Robust_Experiment_v3.zip",
+      "original_sha256": "9924fa1f08c3187ae3ddf715cbb80f061f466befd74a940505a9c2bea2603e69",
+      "original_bytes": 8814,
+      "published_sha256": "10990e6444d059257d9a1e8265bdf585490b71949853f54468a6a478006cc80e",
+      "published_bytes": 8532,
+      "transformations": [
+        "Original manifest bytes normalized for public text; original byte hash retained"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/SOURCES.md",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::SOURCES.md",
+      "original_sha256": "472e1a94cf3fbef2174f081292275acea20366fe9d49d671c72b9664ef029408",
+      "original_bytes": 1763,
+      "published_sha256": "472e1a94cf3fbef2174f081292275acea20366fe9d49d671c72b9664ef029408",
+      "published_bytes": 1763,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/START_HERE.md",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::START_HERE.md",
+      "original_sha256": "37411ae4333e57a88f74c2d930731ada3559cc35110199d2c363503620f4017e",
+      "original_bytes": 339,
+      "published_sha256": "37411ae4333e57a88f74c2d930731ada3559cc35110199d2c363503620f4017e",
+      "published_bytes": 339,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/status.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::status.py",
+      "original_sha256": "818f12cdd0f7ca35bc42dc1d2a675653fe5b4f182d8e150c7c70ba266b28b597",
+      "original_bytes": 1015,
+      "published_sha256": "dc458cbfde1bff36a0e8e4bdde7af32328a3b9b51ac949c80dc93d85220bbe0e",
+      "published_bytes": 1017,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/submit_campaign.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::submit_campaign.py",
+      "original_sha256": "943cf060ce898d4d386cb643fe6077508cde64cc31de56de2fffa67f42d6cb90",
+      "original_bytes": 6476,
+      "published_sha256": "943cf060ce898d4d386cb643fe6077508cde64cc31de56de2fffa67f42d6cb90",
+      "published_bytes": 6476,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/suite.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::suite.py",
+      "original_sha256": "4083e4c92ff2e16899e6da6819ef4677c6a267fae23be2fa8dd198e262c8cd01",
+      "original_bytes": 25909,
+      "published_sha256": "4083e4c92ff2e16899e6da6819ef4677c6a267fae23be2fa8dd198e262c8cd01",
+      "published_bytes": 25909,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/tests/test_core.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::tests/test_core.py",
+      "original_sha256": "1e90486b0fefac7caade2ae7f05be8f3a4719e7501c386b5bb3b59361712c231",
+      "original_bytes": 15092,
+      "published_sha256": "1e90486b0fefac7caade2ae7f05be8f3a4719e7501c386b5bb3b59361712c231",
+      "published_bytes": 15092,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/tests/test_robust.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::tests/test_robust.py",
+      "original_sha256": "8a0aba6d8bdc3d325c0540f5e2033883328e0a49c3e7f450717fdd181b699afc",
+      "original_bytes": 12593,
+      "published_sha256": "8a0aba6d8bdc3d325c0540f5e2033883328e0a49c3e7f450717fdd181b699afc",
+      "published_bytes": 12593,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/tests/test_submission.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::tests/test_submission.py",
+      "original_sha256": "a8fa42feb7d16091bcfd761697655d7992d92f42482cc8780c26c645a92f3573",
+      "original_bytes": 2697,
+      "published_sha256": "a8fa42feb7d16091bcfd761697655d7992d92f42482cc8780c26c645a92f3573",
+      "published_bytes": 2697,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/tests/test_transformers_backend.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::tests/test_transformers_backend.py",
+      "original_sha256": "2cd1c32c4dec8568dec1724ef264cbe2ac2354daf1bcda62ae311871c74a7bb2",
+      "original_bytes": 2362,
+      "published_sha256": "2cd1c32c4dec8568dec1724ef264cbe2ac2354daf1bcda62ae311871c74a7bb2",
+      "published_bytes": 2362,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/validate_statistics.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::validate_statistics.py",
+      "original_sha256": "1954ff7f4e80e7cb6f1bf5cc938d8dd95f12f326268ca3e63e5ccad5ce2ea8ac",
+      "original_bytes": 3928,
+      "published_sha256": "1954ff7f4e80e7cb6f1bf5cc938d8dd95f12f326268ca3e63e5ccad5ce2ea8ac",
+      "published_bytes": 3928,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/validation/design_preview.json",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::validation/design_preview.json",
+      "original_sha256": "135849726797cd4e39bc7cb50e8eff96cbb36ac4a17648f895fa21fc2d5a5de0",
+      "original_bytes": 6110,
+      "published_sha256": "a83cdccbc1cc2cdada768cb5a15ce560ae83a62f5af7799deba48e9411b3c404",
+      "published_bytes": 5963,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/validation/local_test_results.txt",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::validation/local_test_results.txt",
+      "original_sha256": "e58769ee82c4248537bcabfefc3b10aae18c3f7690373f9122962e025afce9f6",
+      "original_bytes": 4943,
+      "published_sha256": "4bb8693a25c96f32a86fd0b9b5183545fa62ff863064b4d8dcf93458027864cf",
+      "published_bytes": 4919,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/validation/python_syntax.json",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::validation/python_syntax.json",
+      "original_sha256": "02275b61dcbd490b3b38d2c6a4f25bc73b2ca6dd26a54ca92dafc010e1cbe480",
+      "original_bytes": 655,
+      "published_sha256": "a1eb0505c35d06666e339f27d94bea7527442b41b719ee72bc6c8e99dc0b9853",
+      "published_bytes": 625,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/validation/synthetic_instrument_diagnostic.json",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::validation/synthetic_instrument_diagnostic.json",
+      "original_sha256": "da87a3e87435920951b772f8ecd84400ec0341986d9d6cf83e0a4800ce07427f",
+      "original_bytes": 1033,
+      "published_sha256": "c7915f76851555d7915db35704ccb2d2a70a3c8113714d8b500f15a0103972fe",
+      "published_bytes": 996,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/VALIDATION.md",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::VALIDATION.md",
+      "original_sha256": "772ee8c7eeeec9ab3ac2c5b9b56a22f40dfb77acefb3cf8fa13935d2ac3726b6",
+      "original_bytes": 3416,
+      "published_sha256": "772ee8c7eeeec9ab3ac2c5b9b56a22f40dfb77acefb3cf8fa13935d2ac3726b6",
+      "published_bytes": 3416,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/verify_package.py",
+      "kind": "published_source",
+      "source": "H2_Robust_Experiment_v3.zip::verify_package.py",
+      "original_sha256": "f0869b673a5f716ac3bd30c7587a52c33a7461ca9d569f178cad226e71c3b656",
+      "original_bytes": 962,
+      "published_sha256": "f0869b673a5f716ac3bd30c7587a52c33a7461ca9d569f178cad226e71c3b656",
+      "published_bytes": 962,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_robust_experiment_v3/PUBLICATION.md",
+      "kind": "publication_note",
+      "source": null,
+      "original_sha256": null,
+      "original_bytes": null,
+      "published_sha256": "ee009d9db5a17c9e85fae2fbf36fc2a786d5987419c34a88bb288ae916098536",
+      "published_bytes": 1021,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/archive_client.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::archive_client.py",
+      "original_sha256": "8a17c425bc9a48ab7d8e59c31e61dc5d0a6bf5752f43b94f6d6c33461818d8e1",
+      "original_bytes": 4734,
+      "published_sha256": "f9ab2dd8cc3f75c503c1b5d1930f946290b5941c1f7e7b71fd4888351e0c9f9c",
+      "published_bytes": 4736,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/bootstrap_compact.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::bootstrap_compact.py",
+      "original_sha256": "f27dd6ffac878cf538f2ed2086af20323c7021e6cf35ca9939f56a6b5ba74df4",
+      "original_bytes": 1707,
+      "published_sha256": "f27dd6ffac878cf538f2ed2086af20323c7021e6cf35ca9939f56a6b5ba74df4",
+      "published_bytes": 1707,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/compact.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::compact.py",
+      "original_sha256": "2ae988d232c49c6dcbfc1f6242378262ba0fd76a85ace10db2b97ac388a0def2",
+      "original_bytes": 3289,
+      "published_sha256": "2ae988d232c49c6dcbfc1f6242378262ba0fd76a85ace10db2b97ac388a0def2",
+      "published_bytes": 3289,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/configs/calibration.json",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::configs/calibration.json",
+      "original_sha256": "b03e95a7eb81098b1c4082eef35d3dd9b84299dd8da7ddba9d3a011578e7a586",
+      "original_bytes": 569,
+      "published_sha256": "b03e95a7eb81098b1c4082eef35d3dd9b84299dd8da7ddba9d3a011578e7a586",
+      "published_bytes": 569,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/configs/full.json",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::configs/full.json",
+      "original_sha256": "586440fae3b59f0d8fbb4bd7bda42e9f6ed2c2463096c90e3248b5c63209f024",
+      "original_bytes": 2119,
+      "published_sha256": "586440fae3b59f0d8fbb4bd7bda42e9f6ed2c2463096c90e3248b5c63209f024",
+      "published_bytes": 2119,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/configs/paws_replication.json",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::configs/paws_replication.json",
+      "original_sha256": "d0a9e301911fe7a7e274d596b8fca1500c24017640d0d4a50933089125867c15",
+      "original_bytes": 667,
+      "published_sha256": "d0a9e301911fe7a7e274d596b8fca1500c24017640d0d4a50933089125867c15",
+      "published_bytes": 667,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/configs/smoke.json",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::configs/smoke.json",
+      "original_sha256": "5f967d3a2982aeda73bb9e2e52e2b869adeab4dd92098889d6fdcb55044c5b7a",
+      "original_bytes": 563,
+      "published_sha256": "5f967d3a2982aeda73bb9e2e52e2b869adeab4dd92098889d6fdcb55044c5b7a",
+      "published_bytes": 563,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/configs/smollm2.json",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::configs/smollm2.json",
+      "original_sha256": "ec8140c6909d132084f72176b15cace1ad9f5fa4f208afef353c881ee8613b50",
+      "original_bytes": 227,
+      "published_sha256": "ec8140c6909d132084f72176b15cace1ad9f5fa4f208afef353c881ee8613b50",
+      "published_bytes": 227,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/doctor.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::doctor.py",
+      "original_sha256": "e9236c8195d60ea70e778fbae45c6b050e35a393e351c830a92ac499e26b91f0",
+      "original_bytes": 1770,
+      "published_sha256": "e9236c8195d60ea70e778fbae45c6b050e35a393e351c830a92ac499e26b91f0",
+      "published_bytes": 1770,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/__init__.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/__init__.py",
+      "original_sha256": "a05d021f9561fed02827b7bdbb9ba0f8090e3274c20c6e793166841458093b21",
+      "original_bytes": 102,
+      "published_sha256": "a05d021f9561fed02827b7bdbb9ba0f8090e3274c20c6e793166841458093b21",
+      "published_bytes": 102,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/analyze.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/analyze.py",
+      "original_sha256": "fd0b2c9a5ac09a576854e77e9f41a6f312603cacf5eeafebb4c1cd4cdca9d380",
+      "original_bytes": 18533,
+      "published_sha256": "fd0b2c9a5ac09a576854e77e9f41a6f312603cacf5eeafebb4c1cd4cdca9d380",
+      "published_bytes": 18533,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/checkpoints.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/checkpoints.py",
+      "original_sha256": "5eefb25e9e3527180503889c7e62d9e5666b70a3ce26f0bac77125b54f1c48dc",
+      "original_bytes": 1987,
+      "published_sha256": "5eefb25e9e3527180503889c7e62d9e5666b70a3ce26f0bac77125b54f1c48dc",
+      "published_bytes": 1987,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/common.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/common.py",
+      "original_sha256": "5eef3f0524d21f6d8908a9d493e05016c5eb16db09272ae79064c8e70f9e0a65",
+      "original_bytes": 5385,
+      "published_sha256": "5eef3f0524d21f6d8908a9d493e05016c5eb16db09272ae79064c8e70f9e0a65",
+      "published_bytes": 5385,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/compact.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/compact.py",
+      "original_sha256": "e5bafc58eb16da9ede565fcaf43840098e3cc51ccdc63875ad7536831d4470c7",
+      "original_bytes": 18194,
+      "published_sha256": "e5bafc58eb16da9ede565fcaf43840098e3cc51ccdc63875ad7536831d4470c7",
+      "published_bytes": 18194,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/data.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/data.py",
+      "original_sha256": "99c8a5aea5902770049234405072b96e180cecf749fe47044240b50bfb8053f9",
+      "original_bytes": 11032,
+      "published_sha256": "99c8a5aea5902770049234405072b96e180cecf749fe47044240b50bfb8053f9",
+      "published_bytes": 11032,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/engine.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/engine.py",
+      "original_sha256": "76e25aba714b4adefc49b953f22543927f05349448d3bb1ff0ceba865b337fc9",
+      "original_bytes": 23173,
+      "published_sha256": "76e25aba714b4adefc49b953f22543927f05349448d3bb1ff0ceba865b337fc9",
+      "published_bytes": 23173,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/geometry.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/geometry.py",
+      "original_sha256": "9a9627f4b303318952f45d8732ed39eb7b92890dc8eca8d5342598cc7078c1f7",
+      "original_bytes": 5721,
+      "published_sha256": "9a9627f4b303318952f45d8732ed39eb7b92890dc8eca8d5342598cc7078c1f7",
+      "published_bytes": 5721,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/gpu.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/gpu.py",
+      "original_sha256": "22af67045ae5cc4bb2b738bf16cbd5d5a5ae8cc7e6fac4429a6141da0936ca81",
+      "original_bytes": 1805,
+      "published_sha256": "22af67045ae5cc4bb2b738bf16cbd5d5a5ae8cc7e6fac4429a6141da0936ca81",
+      "published_bytes": 1805,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/lora.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/lora.py",
+      "original_sha256": "9fc0e56eda85af490adc7a2adf672da200b7e3985d7f0652c90116a0948f0983",
+      "original_bytes": 2819,
+      "published_sha256": "9fc0e56eda85af490adc7a2adf672da200b7e3985d7f0652c90116a0948f0983",
+      "published_bytes": 2819,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/plotting.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/plotting.py",
+      "original_sha256": "7549af22574431163ee01784c8e03d96650d7dce5edc2d7bf9cc4afac6ea4c05",
+      "original_bytes": 2941,
+      "published_sha256": "7549af22574431163ee01784c8e03d96650d7dce5edc2d7bf9cc4afac6ea4c05",
+      "published_bytes": 2941,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/prepare.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/prepare.py",
+      "original_sha256": "25ca1657ed6bef724689cbb0fef103f7f1835de77701fdcf6b845ee85fc5c701",
+      "original_bytes": 10375,
+      "published_sha256": "25ca1657ed6bef724689cbb0fef103f7f1835de77701fdcf6b845ee85fc5c701",
+      "published_bytes": 10375,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/prompts.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/prompts.py",
+      "original_sha256": "e75681620727ab8cea5442c36241a0fcbe134055a1676338201093e0087fba87",
+      "original_bytes": 7033,
+      "published_sha256": "e75681620727ab8cea5442c36241a0fcbe134055a1676338201093e0087fba87",
+      "published_bytes": 7033,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/robust_data.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/robust_data.py",
+      "original_sha256": "417c5efb21079734b24697aaaf8ee2af0848f42af648669a5c4ecc864d9a6311",
+      "original_bytes": 1926,
+      "published_sha256": "417c5efb21079734b24697aaaf8ee2af0848f42af648669a5c4ecc864d9a6311",
+      "published_bytes": 1926,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/storage.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/storage.py",
+      "original_sha256": "2d6751a789f068f254d96e89b263a5a2242a57cad1c1eb721b38b03ce9556abe",
+      "original_bytes": 2156,
+      "published_sha256": "2d6751a789f068f254d96e89b263a5a2242a57cad1c1eb721b38b03ce9556abe",
+      "published_bytes": 2156,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/suite_analysis.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/suite_analysis.py",
+      "original_sha256": "13f3ef1736daa486d51ce54a568dbd847ef7175ddc2de0316495b9aeedbc5e61",
+      "original_bytes": 13861,
+      "published_sha256": "13f3ef1736daa486d51ce54a568dbd847ef7175ddc2de0316495b9aeedbc5e61",
+      "published_bytes": 13861,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/h2/tasks.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::h2/tasks.py",
+      "original_sha256": "b106e5853e4c85025a45958608d4f556b51dbb49c202e5ab5b5ff1f84e582a12",
+      "original_bytes": 1396,
+      "published_sha256": "b106e5853e4c85025a45958608d4f556b51dbb49c202e5ab5b5ff1f84e582a12",
+      "published_bytes": 1396,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/legacy_v3_docs/CHANGELOG.md",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::legacy_v3_docs/CHANGELOG.md",
+      "original_sha256": "85832e0311685996cd9df0ed528d32333b1174ccd4568890eac91ab798026026",
+      "original_bytes": 1097,
+      "published_sha256": "85832e0311685996cd9df0ed528d32333b1174ccd4568890eac91ab798026026",
+      "published_bytes": 1097,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/legacy_v3_docs/FULL_PIPELINE.md",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::legacy_v3_docs/FULL_PIPELINE.md",
+      "original_sha256": "c64491c54b71cf9adf8154cb13f1a9e3d1c39b420713b7a32307cbaaba1130d7",
+      "original_bytes": 22911,
+      "published_sha256": "536ade8028a4a1bd2b7785333ffb53e58d42036cb23d94b0384682bb5d2bccaa",
+      "published_bytes": 22943,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/legacy_v3_docs/H2_CODE_EXPLAINED.md",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::legacy_v3_docs/H2_CODE_EXPLAINED.md",
+      "original_sha256": "8f157395975fcd41d00592810196a1b919b6c3b6dda01efd9076c4743907c611",
+      "original_bytes": 37664,
+      "published_sha256": "8f157395975fcd41d00592810196a1b919b6c3b6dda01efd9076c4743907c611",
+      "published_bytes": 37664,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/legacy_v3_docs/PROTOCOL.md",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::legacy_v3_docs/PROTOCOL.md",
+      "original_sha256": "c312e6e45616c6604f187ad174c8cb212f9297dfd4fa2c8c8f753174b1628883",
+      "original_bytes": 12464,
+      "published_sha256": "c312e6e45616c6604f187ad174c8cb212f9297dfd4fa2c8c8f753174b1628883",
+      "published_bytes": 12464,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/legacy_v3_docs/README.md",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::legacy_v3_docs/README.md",
+      "original_sha256": "f09ab12fdd6be4ee7f824896f96c09b74c882738a3ad7bbc266ded72f6394d5e",
+      "original_bytes": 4374,
+      "published_sha256": "f09ab12fdd6be4ee7f824896f96c09b74c882738a3ad7bbc266ded72f6394d5e",
+      "published_bytes": 4374,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/legacy_v3_docs/SOURCES.md",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::legacy_v3_docs/SOURCES.md",
+      "original_sha256": "472e1a94cf3fbef2174f081292275acea20366fe9d49d671c72b9664ef029408",
+      "original_bytes": 1763,
+      "published_sha256": "472e1a94cf3fbef2174f081292275acea20366fe9d49d671c72b9664ef029408",
+      "published_bytes": 1763,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/legacy_v3_docs/START_HERE.md",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::legacy_v3_docs/START_HERE.md",
+      "original_sha256": "37411ae4333e57a88f74c2d930731ada3559cc35110199d2c363503620f4017e",
+      "original_bytes": 339,
+      "published_sha256": "37411ae4333e57a88f74c2d930731ada3559cc35110199d2c363503620f4017e",
+      "published_bytes": 339,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/legacy_v3_docs/VALIDATION.md",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::legacy_v3_docs/VALIDATION.md",
+      "original_sha256": "772ee8c7eeeec9ab3ac2c5b9b56a22f40dfb77acefb3cf8fa13935d2ac3726b6",
+      "original_bytes": 3416,
+      "published_sha256": "772ee8c7eeeec9ab3ac2c5b9b56a22f40dfb77acefb3cf8fa13935d2ac3726b6",
+      "published_bytes": 3416,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/pbs/analyze.pbs",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::pbs/analyze.pbs",
+      "original_sha256": "e61054fbec6b55fc0fdef804d42767541eb0a0b8e2dfdebbf21b98d1d23be038",
+      "original_bytes": 765,
+      "published_sha256": "e61054fbec6b55fc0fdef804d42767541eb0a0b8e2dfdebbf21b98d1d23be038",
+      "published_bytes": 765,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/pbs/bootstrap.pbs",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::pbs/bootstrap.pbs",
+      "original_sha256": "13f0a604d0434972e3eb7e736a3d29accf9d96b0724378ae9a47f0ff4865c672",
+      "original_bytes": 774,
+      "published_sha256": "13f0a604d0434972e3eb7e736a3d29accf9d96b0724378ae9a47f0ff4865c672",
+      "published_bytes": 774,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/pbs/common.sh",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::pbs/common.sh",
+      "original_sha256": "7971f729437d094170d8fc1620d9ef774cf5b4fdb330a2ba8ecfdc217f6df18e",
+      "original_bytes": 1015,
+      "published_sha256": "6e6d290b1cd8add4d51155c0801199abfbbae3f1789817e2a59f22dddf6d1a6a",
+      "published_bytes": 1017,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/pbs/compact_cpu.pbs",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::pbs/compact_cpu.pbs",
+      "original_sha256": "dee5ab0c41c26f41e25f0e08aa0f5b47e9eb47dafe54483b66bd2f09f300e529",
+      "original_bytes": 604,
+      "published_sha256": "dee5ab0c41c26f41e25f0e08aa0f5b47e9eb47dafe54483b66bd2f09f300e529",
+      "published_bytes": 604,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/pbs/compact_tests.pbs",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::pbs/compact_tests.pbs",
+      "original_sha256": "4d6028b0e515af4bcdec609cbbff937b21572a4dbe8abea49e7d657268c778f4",
+      "original_bytes": 330,
+      "published_sha256": "4d6028b0e515af4bcdec609cbbff937b21572a4dbe8abea49e7d657268c778f4",
+      "published_bytes": 330,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/pbs/gpu.pbs",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::pbs/gpu.pbs",
+      "original_sha256": "febdc9dece9730a4a7aa0c26ee44c780a796e891ae958bdc0f7e0d4b79503b82",
+      "original_bytes": 646,
+      "published_sha256": "febdc9dece9730a4a7aa0c26ee44c780a796e891ae958bdc0f7e0d4b79503b82",
+      "published_bytes": 646,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/pbs/prepare.pbs",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::pbs/prepare.pbs",
+      "original_sha256": "b13cf279fa2eefd3c33dfdecbd7dfa727c9ea15481fec467f54a3d43863b5df1",
+      "original_bytes": 344,
+      "published_sha256": "b13cf279fa2eefd3c33dfdecbd7dfa727c9ea15481fec467f54a3d43863b5df1",
+      "published_bytes": 344,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/pbs/setup.pbs",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::pbs/setup.pbs",
+      "original_sha256": "fa19a2c5308e79a13867f439bef64f9eff99a34805812972320c44cdee7bba75",
+      "original_bytes": 492,
+      "published_sha256": "fa19a2c5308e79a13867f439bef64f9eff99a34805812972320c44cdee7bba75",
+      "published_bytes": 492,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/pbs/statistics.pbs",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::pbs/statistics.pbs",
+      "original_sha256": "e8ab7f7da1ef628ba967c9127edade820c79657963785db99b413865d710a07a",
+      "original_bytes": 284,
+      "published_sha256": "e8ab7f7da1ef628ba967c9127edade820c79657963785db99b413865d710a07a",
+      "published_bytes": 284,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/pbs/suite_cpu.pbs",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::pbs/suite_cpu.pbs",
+      "original_sha256": "8e79ae3179dc7875002692d876d5ed57e87b54f7db3268aeefbb4312a87f651f",
+      "original_bytes": 839,
+      "published_sha256": "8e79ae3179dc7875002692d876d5ed57e87b54f7db3268aeefbb4312a87f651f",
+      "published_bytes": 839,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/pbs/suite_gpu.pbs",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::pbs/suite_gpu.pbs",
+      "original_sha256": "fd2cbc54db1c12b22a3cd411b1e7565c71174a54214dd4385b37ea98aaccebb7",
+      "original_bytes": 522,
+      "published_sha256": "fd2cbc54db1c12b22a3cd411b1e7565c71174a54214dd4385b37ea98aaccebb7",
+      "published_bytes": 522,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/README.md",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::README.md",
+      "original_sha256": "2aa3d34df7edc618aacb93216827529030b937f0801e956bb293d53e012db4f8",
+      "original_bytes": 3734,
+      "published_sha256": "2aa3d34df7edc618aacb93216827529030b937f0801e956bb293d53e012db4f8",
+      "published_bytes": 3734,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/requirements.txt",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::requirements.txt",
+      "original_sha256": "f1a5415b9ba7f989d1bb32baec4f6b5f60f38dc10cd10e6d8ae4a30ef5684574",
+      "original_bytes": 236,
+      "published_sha256": "f1a5415b9ba7f989d1bb32baec4f6b5f60f38dc10cd10e6d8ae4a30ef5684574",
+      "published_bytes": 236,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/restore_compact.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::restore_compact.py",
+      "original_sha256": "5a5ec8ba902f7c3c3cc8b300050c6cab9bbbcf82b1add9026cd80dbc7dcc6a01",
+      "original_bytes": 4053,
+      "published_sha256": "5a5ec8ba902f7c3c3cc8b300050c6cab9bbbcf82b1add9026cd80dbc7dcc6a01",
+      "published_bytes": 4053,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/settings.env.example",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::settings.env.example",
+      "original_sha256": "c301a90d3443afd953ed9fada1d1d20882b0fed7c19c5fa671b4268bae2152cf",
+      "original_bytes": 530,
+      "published_sha256": "fcf93bbf4fdc30abbe44d61e16b8bab0be147171e8af88f5b9ac786788a86a8e",
+      "published_bytes": 532,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "provenance/h2_20261028/original_compact_source_manifest.json",
+      "kind": "original_package_manifest",
+      "source": "H2_Compact_Workflow.zip",
+      "original_sha256": "d0879217fd47c8ab646b58675f4ad4facb5ed2a623ee1640a50fd53ccf5b5b2b",
+      "original_bytes": 10000,
+      "published_sha256": "7c80ab20384771aafdcf4c1a5ada7d022f7481bfc1678d9c1e9b4b909d43f96b",
+      "published_bytes": 9680,
+      "transformations": [
+        "Original manifest bytes normalized for public text; original byte hash retained"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/START_COMPACT.md",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::START_COMPACT.md",
+      "original_sha256": "87a4d72fd47762acbda1d7ddff0a04afdcd57692f8cf4c56b45e577b2c534894",
+      "original_bytes": 10784,
+      "published_sha256": "0be0022fbb063271711796320da00abd055606152b22dc9dfa674d2903aa9b2a",
+      "published_bytes": 10812,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/status.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::status.py",
+      "original_sha256": "818f12cdd0f7ca35bc42dc1d2a675653fe5b4f182d8e150c7c70ba266b28b597",
+      "original_bytes": 1015,
+      "published_sha256": "dc458cbfde1bff36a0e8e4bdde7af32328a3b9b51ac949c80dc93d85220bbe0e",
+      "published_bytes": 1017,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/submit_campaign.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::submit_campaign.py",
+      "original_sha256": "943cf060ce898d4d386cb643fe6077508cde64cc31de56de2fffa67f42d6cb90",
+      "original_bytes": 6476,
+      "published_sha256": "943cf060ce898d4d386cb643fe6077508cde64cc31de56de2fffa67f42d6cb90",
+      "published_bytes": 6476,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/suite.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::suite.py",
+      "original_sha256": "11e56e612e5d9ab7d914a9bd29f7f5b8d9afae11cf8cc278dbb418607ba37fcc",
+      "original_bytes": 27908,
+      "published_sha256": "11e56e612e5d9ab7d914a9bd29f7f5b8d9afae11cf8cc278dbb418607ba37fcc",
+      "published_bytes": 27908,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/tests/test_compact.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::tests/test_compact.py",
+      "original_sha256": "6ec1130c16f332c46f630111e9dda2a48fb176d0809c365092631764416f5b70",
+      "original_bytes": 14197,
+      "published_sha256": "6ec1130c16f332c46f630111e9dda2a48fb176d0809c365092631764416f5b70",
+      "published_bytes": 14197,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/tests/test_core.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::tests/test_core.py",
+      "original_sha256": "1e90486b0fefac7caade2ae7f05be8f3a4719e7501c386b5bb3b59361712c231",
+      "original_bytes": 15092,
+      "published_sha256": "1e90486b0fefac7caade2ae7f05be8f3a4719e7501c386b5bb3b59361712c231",
+      "published_bytes": 15092,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/tests/test_robust.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::tests/test_robust.py",
+      "original_sha256": "8a0aba6d8bdc3d325c0540f5e2033883328e0a49c3e7f450717fdd181b699afc",
+      "original_bytes": 12593,
+      "published_sha256": "8a0aba6d8bdc3d325c0540f5e2033883328e0a49c3e7f450717fdd181b699afc",
+      "published_bytes": 12593,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/tests/test_submission.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::tests/test_submission.py",
+      "original_sha256": "a8fa42feb7d16091bcfd761697655d7992d92f42482cc8780c26c645a92f3573",
+      "original_bytes": 2697,
+      "published_sha256": "a8fa42feb7d16091bcfd761697655d7992d92f42482cc8780c26c645a92f3573",
+      "published_bytes": 2697,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/tests/test_transformers_backend.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::tests/test_transformers_backend.py",
+      "original_sha256": "2cd1c32c4dec8568dec1724ef264cbe2ac2354daf1bcda62ae311871c74a7bb2",
+      "original_bytes": 2362,
+      "published_sha256": "2cd1c32c4dec8568dec1724ef264cbe2ac2354daf1bcda62ae311871c74a7bb2",
+      "published_bytes": 2362,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/validate_statistics.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::validate_statistics.py",
+      "original_sha256": "1954ff7f4e80e7cb6f1bf5cc938d8dd95f12f326268ca3e63e5ccad5ce2ea8ac",
+      "original_bytes": 3928,
+      "published_sha256": "1954ff7f4e80e7cb6f1bf5cc938d8dd95f12f326268ca3e63e5ccad5ce2ea8ac",
+      "published_bytes": 3928,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/validation/planning.json",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::validation/planning.json",
+      "original_sha256": "59fb031cf85f94c0e0ab87d90f99b50a8d431ed450fa6fda360426a18e8ade35",
+      "original_bytes": 919,
+      "published_sha256": "82ec2d05c7f03084f2e486da8fd2e6e4c8ff04491e9b5b0b60e84e9f7d1b340e",
+      "published_bytes": 890,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/validation/test_summary.json",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::validation/test_summary.json",
+      "original_sha256": "0693efb7801bc5a2170e83b8897f5f7059662b0389ee460107a33c7403f11e41",
+      "original_bytes": 226,
+      "published_sha256": "44408e2c0908f0a066a07a16881af36a81d8bf4e6d3d9bc720c8492ddd036e8a",
+      "published_bytes": 218,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/VALIDATION.md",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::VALIDATION.md",
+      "original_sha256": "21e8dc6ce2291fe73d18fc32bd8fcf7095f4cfd258ed2d0097a9d1c755a413e0",
+      "original_bytes": 2553,
+      "published_sha256": "21e8dc6ce2291fe73d18fc32bd8fcf7095f4cfd258ed2d0097a9d1c755a413e0",
+      "published_bytes": 2553,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/verify_package.py",
+      "kind": "published_source",
+      "source": "H2_Compact_Workflow.zip::verify_package.py",
+      "original_sha256": "f0869b673a5f716ac3bd30c7587a52c33a7461ca9d569f178cad226e71c3b656",
+      "original_bytes": 962,
+      "published_sha256": "f0869b673a5f716ac3bd30c7587a52c33a7461ca9d569f178cad226e71c3b656",
+      "published_bytes": 962,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "h2_compact_experiment/PUBLICATION.md",
+      "kind": "publication_note",
+      "source": null,
+      "original_sha256": null,
+      "original_bytes": null,
+      "published_sha256": "b3e7948f5514e3d36553836fb53724a704d5d3520be9fb036c453436072651a0",
+      "published_bytes": 961,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "results/validation/v3_cpu_tests.txt",
+      "kind": "preserved_local_test_log",
+      "source": "outputs/H2_Robust_Experiment_v3/local_tests.log",
+      "original_sha256": "fc972baa13732aeb15808101221f0bb6df255b66b119f0d9ab97b0e8bad105ae",
+      "original_bytes": 7727,
+      "published_sha256": "1c0b114a0bbb29ad50ff340395d3d0d3f8f64b18c5f6adecde9208bbfa7819be",
+      "published_bytes": 7775,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "results/validation/v3_statistics_console.txt",
+      "kind": "preserved_local_test_log",
+      "source": "outputs/H2_Robust_Experiment_v3/statistics.log",
+      "original_sha256": "7520660098ec1a2fea73e63e48d70ff583d9ee81d27b61d939fa5f5dae9a0b91",
+      "original_bytes": 791,
+      "published_sha256": "9e55dbc018ebb02feb1925b0672e95f8f1f252f28696207e09308850908613d7",
+      "published_bytes": 790,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "results/validation/compact_development_failed.txt",
+      "kind": "preserved_local_test_log",
+      "source": "outputs/H2_Compact_Workflow/h2_compact_experiment/validation_tests.log",
+      "original_sha256": "8b19f3ab05d664dce7fb0c7f179f61729480ae509e532d486f1b335b451eb6e5",
+      "original_bytes": 15418,
+      "published_sha256": "b65d20d118b8fb36f625f6b14596a84407d2bb817cfc17e7792315ed02ab63ec",
+      "published_bytes": 15570,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "results/validation/compact_focused_pass.txt",
+      "kind": "preserved_local_test_log",
+      "source": "outputs/H2_Compact_Workflow/h2_compact_experiment/validation_compact.log",
+      "original_sha256": "3c063476839d2f4a69dcaec604eccf8f5bd8a7333bb4e09165b6d97b8249b30e",
+      "original_bytes": 4542,
+      "published_sha256": "15e4e427d1aa5b250d748fd0e09748c2d3727b81f3ae6397f356ab1885714ab5",
+      "published_bytes": 4622,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "results/validation/compact_final_pass.txt",
+      "kind": "preserved_local_test_log",
+      "source": "outputs/H2_Compact_Workflow/h2_compact_experiment/validation_final.log",
+      "original_sha256": "abda05a87fccb179efdf92f73196d0c90206c7ec9fceae48d14c2a3e7dfd0e79",
+      "original_bytes": 9238,
+      "published_sha256": "f32fc7b5c364e04565f96ea12eae72450fe5211b2b351fc130bc188feb00c0b9",
+      "published_bytes": 9285,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "results/h2v3_smoke_r1/gpu_inventory_2.txt",
+      "kind": "sanitized_hardware_diagnostic",
+      "source": "Pasted text(2).txt",
+      "original_sha256": "c084e09bde0f40fb03ea876bbbbde1e7ab8eaed277c9d754a9a59a2625864b97",
+      "original_bytes": 10695,
+      "published_sha256": "a12695eb7f9f7b2c0faf21ba9501b5908804708e9079c76d4395468234775dcc",
+      "published_bytes": 7765,
+      "transformations": [
+        "Original timestamp and hardware/MIG usage tables retained; other-user process table omitted; local identifiers generalized; LF normalized"
+      ]
+    },
+    {
+      "path": "results/h2v3_smoke_r1/gpu_inventory_3.txt",
+      "kind": "sanitized_hardware_diagnostic",
+      "source": "Pasted text(3).txt",
+      "original_sha256": "5b9a7984e7135fa126034144bb90bebfce9ebbf4b75bcc34dbed52bba89cee8e",
+      "original_bytes": 10763,
+      "published_sha256": "b122c63ffdaa554b18f90419cc96ebd76ad655a3c8b9f4ac49ebb3b679cc6c88",
+      "published_bytes": 7836,
+      "transformations": [
+        "Original timestamp and hardware/MIG usage tables retained; other-user process table omitted; local identifiers generalized; LF normalized"
+      ]
+    },
+    {
+      "path": "results/h2v3_smoke_r1/gpu_console_excerpt.txt",
+      "kind": "preserved_user_console_attachment",
+      "source": "Pasted text(4).txt",
+      "original_sha256": "feb81fcefcabba11a2099e0872ed9f216d3ef03ec4d6ff1b24b8ff4034cf7dfe",
+      "original_bytes": 45300,
+      "published_sha256": "ddf983f29aa51d83f4eb50f7e628e945b33bafaad16926620ba8a1f2b230a617",
+      "published_bytes": 45087,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "results/h2v3_smoke_r1/stage_metrics_from_console.json",
+      "kind": "derived_console_metrics",
+      "source": null,
+      "original_sha256": null,
+      "original_bytes": null,
+      "published_sha256": "3ce9f153de39085ad2896612eb94846b4a9082b536704563087abe945f600a8b",
+      "published_bytes": 110594,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "results/h2v3_smoke_r1/stage_metrics_from_console.csv",
+      "kind": "derived_console_metrics",
+      "source": null,
+      "original_sha256": null,
+      "original_bytes": null,
+      "published_sha256": "f3616fadbb09377a00925dc4c83937b7661067f4cdc03217e4c12323ae121c15",
+      "published_bytes": 15536,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    },
+    {
+      "path": "results/h2v3_smoke_r1/derived_accuracy_summary.json",
+      "kind": "derived_console_metrics",
+      "source": null,
+      "original_sha256": null,
+      "original_bytes": null,
+      "published_sha256": "052f7116e279ef29e848c28de7d90eb3dbad2df8ae5e27958d391eb436c5103f",
+      "published_bytes": 1749,
+      "transformations": [
+        "UTF-8/LF publication; local account paths and GPU UUIDs generalized where present"
+      ]
+    }
+  ],
+  "not_uploaded": [
+    "Private environment/credentials",
+    "Other-user GPU process rows",
+    "Original model weights, dataset caches, probe arrays and trained H100 checkpoints not available for this publication",
+    "Native H100 run configs/freeze receipts and detailed geometry comparison CSVs not received"
+  ]
+}

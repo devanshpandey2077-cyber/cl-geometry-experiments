@@ -1,0 +1,55 @@
+EVIDENCE TYPE: normalized transcription of user-pasted terminal output.
+SOURCE: research conversation, 27 October 2026.
+This is not a byte-for-byte copy of native server report files. Original file
+hashes and detailed geometry outputs were not supplied.
+
+$ qstat -xf 37980.master | grep -E 'job_state|Exit_status|comment'
+    job_state = F
+    comment = Job run at Tue Oct 27 at 01:55 on (master:ncpus=8:mem=33554432kb)
+    Exit_status = 0
+
+Visible analysis log:
+logs/analyze.37980.master.log
+Job: 37980.master; host: HPC_HOST; Python: /Data4/YOUR_HPC_USER/.conda/envs/h2_h100/bin/python
+2026-10-27T01:55:13+05:30
+AFFINITY frozen_O1_s17 0
+AFFINITY frozen_O1_s17 1
+AFFINITY frozen_O1_s17 2
+AFFINITY frozen_O1_s17 3
+AFFINITY frozen_O1_s17 4
+AFFINITY frozen_O1_s17 5
+BOOTSTRAP frozen_O1_s17 1 / 40
+BOOTSTRAP frozen_O1_s17 25 / 40
+AFFINITY head_O1_s17 0
+AFFINITY head_O1_s17 1
+AFFINITY head_O1_s17 2
+AFFINITY head_O1_s17 3
+AFFINITY head_O1_s17 4
+AFFINITY head_O1_s17 5
+BOOTSTRAP head_O1_s17 1 / 40
+BOOTSTRAP head_O1_s17 25 / 40
+AFFINITY lora_O1_s17 0
+AFFINITY lora_O1_s17 1
+AFFINITY lora_O1_s17 2
+AFFINITY lora_O1_s17 3
+AFFINITY lora_O1_s17 4
+AFFINITY lora_O1_s17 5
+BOOTSTRAP lora_O1_s17 1 / 40
+BOOTSTRAP lora_O1_s17 25 / 40
+SUITE ANALYSIS COMPLETE /Data4/YOUR_HPC_USER/h2_robust_experiment_v3/reports/h2v3_smoke_r1
+
+Reported summary.md:
+# H2 v3 suite evidence
+
+Complete registered suite: True
+Analyzed cells: 1/1
+
+| Cell | Eligible reversals summed across runs | Repeated comparisons | Result |
+|---|---:|---:|---|
+| qwen1.7b_d20261031_reference | 0 | 0 | NO ELIGIBLE REVERSALS AT DECLARED RESOLUTION |
+
+Counts are dependent observations, not independent experiments or p-values.
+Smoke/calibration cells remain functionality/development evidence regardless of their numerical outcomes.
+An absence of eligible reversals is a result at this protocol's resolution, not a universal disproof.
+Read joint_pair_comparisons.csv, the learning audits, cutoff spectra, controls and all failed-run records.
+Secondary sensitivity output is descriptive and does not replace the registered primary analysis.

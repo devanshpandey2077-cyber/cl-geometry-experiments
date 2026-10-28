@@ -1,6 +1,14 @@
 > Public copy: local account/server paths are generalized. Original-source hashes are retained in provenance/local_artifact_inventory.json.
 
-# H2, H3 and H4 — Empirical Research Log
+> Publication update, 28 October 2026: the later v3 GPU smoke campaign completed
+> and reported zero eligible reversals. Its preserved console metrics, local
+> validation logs, source snapshots and unresolved artifacts are indexed in
+> [the testing index](TESTING_INDEX.md) and
+> [the 27 October record](EXPERIMENT_RECORD_2026-10-27.md).
+> Historical numbered entries below retain their original dates and scope.
+
+
+# H2, H3 and H4 â€” Empirical Research Log
 
 Created: 23 October 2026. Time zone for human entries: Asia/Calcutta (UTC+05:30).
 Record version: 1.3. Initial event: EVT-000001. Latest event: EVT-000004.
@@ -63,17 +71,17 @@ A negative result means the specified effect was not demonstrated under the test
 
 Definitions are grounded in SRC-001, Section 5, and qualified by SRC-002. These are register version 1; changes require a new version, rationale, date and affected campaign IDs.
 
-### H2-v1 — Rank inversion
+### H2-v1 â€” Rank inversion
 
 Question: can the relative affinity ordering of two task pairs reverse during training?
 
-Let A_t(i,j) be the specified representation-affinity measurement for tasks i and j at checkpoint t. For pair P=(i,j), pair Q=(k,l), define D_t(P,Q)=A_t(P)-A_t(Q). A raw reversal between declared endpoints is D_0 × D_T < 0. An uncertainty-supported, practically separated reversal requires stronger predeclared criteria.
+Let A_t(i,j) be the specified representation-affinity measurement for tasks i and j at checkpoint t. For pair P=(i,j), pair Q=(k,l), define D_t(P,Q)=A_t(P)-A_t(Q). A raw reversal between declared endpoints is D_0 Ã— D_T < 0. An uncertainty-supported, practically separated reversal requires stronger predeclared criteria.
 
 The existing version-2 H2 design uses mean squared principal-angle cosine between the top-r feature-coordinate subspaces of centered task representations:
 
-    X_i: fixed-probe rows × representation coordinates
+    X_i: fixed-probe rows Ã— representation coordinates
     X_i,c = X_i - column_mean(X_i)
-    V_i: top-r right singular vectors of X_i,c, as d × r columns
+    V_i: top-r right singular vectors of X_i,c, as d Ã— r columns
     A_t(i,j) = ||V_i^T V_j||_F^2 / r
 
 Record r, layer, pooling, centering, probe identities and numerical settings. This estimator discards task mean shifts and may reflect nuisance variation. Changing the estimator changes the operational claim. Shared orthogonal coordinate changes preserve this overlap; uniform rescaling need not change it. A geometry intervention must therefore be checked against the actual quantity claimed to change.
@@ -82,7 +90,7 @@ Record r, layer, pooling, centering, probe identities and numerical settings. Th
 
 **Required record:** all affinity matrices, all eligible comparisons, declared endpoints, minimum-gap rule, paired uncertainty, multiplicity family, estimator diagnostics, frozen-feature control, learning checks, seeds/orders and sensitivity analyses.
 
-### H3-v1 — Forward predictive dominance
+### H3-v1 â€” Forward predictive dominance
 
 Question: do current geometry and its trajectory predict future forgetting better than initial geometry, on held-out task pairs and training regimes, including the declared setting involving tasks not yet trained?
 
@@ -92,11 +100,11 @@ Compare a predictor from A_0 with one using A_t and a declared estimate of its p
 
 **Required record:** training/evaluation group identities, timestamps/features available at each origin, target definition, horizons, fitted predictors and tuning, leakage checks, all baseline predictions and errors, uncertainty over independent groups, out-of-regime and out-of-pair results, and failures.
 
-### H4-v1 — Function-preserving intervention and subsequent forgetting
+### H4-v1 â€” Function-preserving intervention and subsequent forgetting
 
 Question: does an intervention changing geometry/its trajectory, while preserving old-task function at intervention time, change subsequent forgetting?
 
-The draft proposes estimating the old-readout Jacobian J_old, forming a low-sensitivity projector P_perp, and applying z' = z + (lambda-1) P_perp z. This is a proposed intervention, not an executed result. J_old × delta_z approximately zero is a local first-order check; finite changes require held-out measurements of old-task loss, accuracy and predictive distributions.
+The draft proposes estimating the old-readout Jacobian J_old, forming a low-sensitivity projector P_perp, and applying z' = z + (lambda-1) P_perp z. This is a proposed intervention, not an executed result. J_old Ã— delta_z approximately zero is a local first-order check; finite changes require held-out measurements of old-task loss, accuracy and predictive distributions.
 
 **Meaning of a positive finding:** a controlled intervention affects future forgetting under the measured function-preservation conditions. Naming this causal mediation by a particular scalar affinity requires additional identification: the intervention can also change conditioning, capacity or optimizer dynamics. Preserving outputs on a finite probe is not preserving the function on all inputs.
 
@@ -148,7 +156,7 @@ Retain original numeric precision in raw outputs. Display rounding belongs in ta
 
 These entries are historical imports, not new replications. Execution dates are UNKNOWN unless separately established. Import date: 23 October 2026. HIST identifiers deliberately distinguish them from new campaign runs.
 
-### HIST-H2-001 — H100 small-pilot trajectory
+### HIST-H2-001 â€” H100 small-pilot trajectory
 
 Evidence status: REPORTED HISTORICAL from SRC-002. The original server run and its feature files were not independently accessed while initializing this notebook.
 
@@ -166,7 +174,7 @@ Evidence status: REPORTED HISTORICAL from SRC-002. The original server run and i
 | Environment/interpreter | h2_h100; /Data4/YOUR_HPC_USER/.conda/envs/h2_h100/bin/python |
 | Task order | SST-2 -> QQP -> QNLI -> MNLI -> AG News |
 | Selected custom splits per task | 100 train, 20 validation, 30 probe, 50 test; not official benchmark-test reporting |
-| Probe checkpoints | Stage 0, then after tasks 1–5; printed layers 6, 14, 22 |
+| Probe checkpoints | Stage 0, then after tasks 1â€“5; printed layers 6, 14, 22 |
 | Output directory | runs/h100_smoke_36125.master, reported remote path |
 | Missing important details | Original executed scripts, full config/seed/adapter/optimizer/budget, exact probe IDs, baseline scores, complete stage scores, affinity outputs, control results and uncertainty |
 
@@ -180,7 +188,7 @@ Candidate pools reported during preparation were larger than the selected splits
 | MNLI | 392,568 | 100 |
 | AG News | 119,849 | 100 |
 
-Reported accuracy readings, scale 0–1:
+Reported accuracy readings, scale 0â€“1:
 
 | Checkpoint | SST-2 | QQP | QNLI | MNLI | AG News |
 |---|---:|---:|---:|---:|---:|
@@ -207,7 +215,7 @@ Conclusion: the earlier report supports workflow execution and these reported cl
 
 **Historical record update:** the missing original files and stage-4 scores were subsequently located and inspected; see EVT-000003. The initialization account above is retained as the earlier evidence state.
 
-### HIST-SW-001 — Local CPU implementation checks
+### HIST-SW-001 â€” Local CPU implementation checks
 
 Evidence status: DIRECT ARTIFACT for SRC-004's text; execution itself was historical and was not rerun now.
 
@@ -227,7 +235,7 @@ Counters below refer to new research runs logged after this notebook was created
 
 A future counter update must identify the new run IDs, attempts, dependent branches and analyses. Never pool the three columns into a claim of independent sample size.
 
-## 7. Protocol record — fill and freeze before confirmation
+## 7. Protocol record â€” fill and freeze before confirmation
 
 Status of new protocols: NOT FROZEN. This template is a documentation structure, not a completed preregistration. Existing suggested parameters in Section 8 are not evidence of a pre-result commitment for a new run.
 
@@ -295,7 +303,7 @@ The earlier proposal's five seeds across three fixed orders share data and same-
 
 An omitted cell gets a reason: cost, unavailable data, numerical failure, scope decision or unfinished work. Count every intended cell and every attempt, including cells that contradict the preferred explanation. Choose a repeat count from desired precision and observed variability, not from how many repetitions first produce significance. Log interim looks and any valid sequential procedure before using them to stop.
 
-## 9. Full per-run record — duplicate for every new run
+## 9. Full per-run record â€” duplicate for every new run
 
 Run ID: UNASSIGNED TEMPLATE. Do not count this template as a run.
 
@@ -392,7 +400,7 @@ A fresh run should start from its declared common initial state. An H4 branch st
     confidence_level / minimum_effect_threshold / multiplicity_family:
     validity_failures_and_disposition:
 
-### 9.6 Readings ledger — enter every supplied numerical reading
+### 9.6 Readings ledger â€” enter every supplied numerical reading
 
 | Reading ID | Run/attempt/arm | Checkpoint/task/pair | Metric and definition | Exact value | Unit/scale | n and independent unit | Uncertainty/method | Raw artifact/row | Evidence label |
 |---|---|---|---|---|---|---|---|---|---|
@@ -431,7 +439,7 @@ For every H2 analysis, bind the run, resolved measurement settings and all input
 | Learning health | Actual learning/feature change; a non-learning run cannot diagnose a rich-learning prediction |
 | Scope | All layers/ranks/probes/orders inspected and which were primary before results |
 
-For K=5 tasks there are 10 unordered task pairs and 45 comparisons between those pair affinities. These comparisons may share tasks and are not 45 independent trained experiments. SRC-002's proposed rule requires the initial interval entirely above +0.01 and final interval entirely below -0.01, or the reverse. It proposes a 90-value within-run family (45 comparisons × two endpoints), or a 1,530-value family across 17 campaign runs. If that design is changed, recalculate and declare the family; do not silently reuse the old adjustment.
+For K=5 tasks there are 10 unordered task pairs and 45 comparisons between those pair affinities. These comparisons may share tasks and are not 45 independent trained experiments. SRC-002's proposed rule requires the initial interval entirely above +0.01 and final interval entirely below -0.01, or the reverse. It proposes a 90-value within-run family (45 comparisons Ã— two endpoints), or a 1,530-value family across 17 campaign runs. If that design is changed, recalculate and declare the family; do not silently reuse the old adjustment.
 
 Frozen-control drift, numerical estimator failure, confidence intervals crossing the tie region and robust absence at a predeclared resolution must receive different labels. A frozen-control failure triggers an instrument investigation, not a finding of H2. Searching intermediate times for a crossing needs its own multiplicity rule or an exploratory label.
 
@@ -524,7 +532,7 @@ For each independent parent, report paired Forgetting_intervention - Forgetting_
 
 ## 13. Shared metric definitions and units
 
-Let a_(s,i) be accuracy on task i after stage s, on the declared fixed evaluation data. Use fractions 0–1 in raw tables unless otherwise stated. A change of 0.08 is eight percentage points; it is not automatically an eight-percent relative change.
+Let a_(s,i) be accuracy on task i after stage s, on the declared fixed evaluation data. Use fractions 0â€“1 in raw tables unless otherwise stated. A change of 0.08 is eight percentage points; it is not automatically an eight-percent relative change.
 
 | Metric | Definition | Recording requirement |
 |---|---|---|
@@ -583,15 +591,15 @@ Do not delete a run because it weakens the hypothesis. Exclusions must follow pr
 | Decision | Date | Decision and rationale | Evidence | Effect |
 |---|---|---|---|---|
 | DEC-001 | 2026-10-23 | Begin one continuous, detailed H2/H3/H4 record; preserve unfavorable and incomplete evidence | SRC-005 | This file is the working notebook |
-| DEC-002 | 2026-10-23 | Import historical work with explicit provenance, not as new hypothesis replications | SRC-001–004 | Current hypotheses remain undetermined |
+| DEC-002 | 2026-10-23 | Import historical work with explicit provenance, not as new hypothesis replications | SRC-001â€“004 | Current hypotheses remain undetermined |
 | DEC-003 | 2026-10-23 | Keep observed, calculated, proposed and unknown items distinct | Source gaps and scientific scope | No invented readings or retroactive preregistration |
 | DEC-004 | 2026-10-23 | Prepare a new public GitHub repository named cl-geometry-experiments, as selected by the researcher | GitHub destination choice in this chat | Upload authorized; initial access blockers resolved in EVT-000003 and publication verified in EVT-000004 |
 
 ## 15. Chronological event journal
 
-### EVT-000001 — Notebook initialization
+### EVT-000001 â€” Notebook initialization
 
-Date received/recorded: 23 October 2026, Asia/Calcutta. Exact historical run times: UNKNOWN. Type: documentation and protocol planning. Related decision IDs: DEC-001–003. Related sources: SRC-001–005.
+Date received/recorded: 23 October 2026, Asia/Calcutta. Exact historical run times: UNKNOWN. Type: documentation and protocol planning. Related decision IDs: DEC-001â€“003. Related sources: SRC-001â€“005.
 
 Researcher intent: record every available detail of repeated empirical tests of H2, H3 and H4, including parameters, equipment, datasets, readings and methods, before progressing to later stages of the research.
 
@@ -601,7 +609,7 @@ Observed new scientific readings: NONE. New training runs: NONE. New H2/H3/H4 an
 
 Interpretation: this establishes a documentation system and current evidence baseline. It does not establish any of the hypotheses. The next experimental event should identify its protocol, exact configuration and original output artifacts.
 
-### EVT-000002 — GitHub publication preparation and blockers
+### EVT-000002 â€” GitHub publication preparation and blockers
 
 Date received/recorded: 23 October 2026, Asia/Calcutta. Type: research infrastructure. Decision: DEC-004. Scientific run counts and hypothesis conclusions are unchanged.
 
@@ -613,9 +621,9 @@ Observed blockers: the connected GitHub tools support content changes in existin
 
 Next actions: obtain an authenticated GitHub browser session or an existing empty repository link; obtain the original ZIPs through accessible local files; inspect and organize actual source; check publishable files for credentials; include setup documentation, the research log and an appropriate ignore file; upload and verify the remote commit. Original reference files remain read-only. There were no new training runs, scientific readings or hypothesis tests in this infrastructure event.
 
-### EVT-000003 — Local source inspection and historical pilot evidence update
+### EVT-000003 â€” Local source inspection and historical pilot evidence update
 
-Date recorded: 23 October 2026, Asia/Calcutta. Type: source verification, historical evidence import and GitHub preparation. Sources: SRC-006–010. No new training trajectory or H2/H3/H4 experiment was executed.
+Date recorded: 23 October 2026, Asia/Calcutta. Type: source verification, historical evidence import and GitHub preparation. Sources: SRC-006â€“010. No new training trajectory or H2/H3/H4 experiment was executed.
 
 The researcher supplied C:/Users/LOCAL_USER/Downloads/H2_Full_Experiment_v2 and C:/Users/LOCAL_USER/Downloads/h2_llm_testbed and confirmed creation of cl-geometry-experiments. The public repository devanshpandey2077-cyber/cl-geometry-experiments was verified empty and writable. The earlier source-access/repository-creation blockers are resolved through these supplied local folders and the researcher-created repository.
 
@@ -623,7 +631,7 @@ Source integrity: all 35 hashed entries in the full package's original SOURCE_MA
 
 The historical pilot config records seed 42, LoRA rank 16, learning rate 0.0001, microbatch 4, accumulation 8, optimizer-step target 20 per task, length cap 256, 30 probes/task, evaluation limit 50, layers 6/14/22, frozen=false and the same five-task order previously reported. The saved adapter config records LoRA alpha 32, dropout 0.0 and q/k/v/o projections. These are the pilot settings, distinct from version-2 defaults. The code repeats task data until its step target; no per-update actual-token ledger was recovered.
 
-The original accuracy.json and saved GPU log agree. Complete supplied readings, scale 0–1:
+The original accuracy.json and saved GPU log agree. Complete supplied readings, scale 0â€“1:
 
 | Stage | SST-2 | QQP | QNLI | MNLI | AG News |
 |---|---:|---:|---:|---:|---:|
@@ -637,11 +645,11 @@ Newly recoverable DERIVED reading: BWT = [(0.92-0.92)+(0.74-0.82)+(0.76-0.82)+(0
 
 The saved pilot documentation/data_manifest.json records 100 train, 20 validation, 30 probe and 50 test examples per task. The top-level legacy data/ directory has a separate larger manifest and must not be asserted to be the exact small pilot splits. In particular, the pilot used data_h100_smoke, which is not supplied as a matching raw-data directory here. Probe identity reconstruction from the larger data/ directory would be unsupported without additional evidence.
 
-Ninety saved feature files cover six stages × five tasks × three layers; their headers and hashes are inventoried without running an affinity estimator. Five trained adapter files and their metadata are present. No frozen-control output, completed uncertainty-supported inversion analysis, H3 forward evaluation or H4 intervention was identified. H2, H3 and H4 remain undetermined; the new-run counters stay zero.
+Ninety saved feature files cover six stages Ã— five tasks Ã— three layers; their headers and hashes are inventoried without running an affinity estimator. Five trained adapter files and their metadata are present. No frozen-control output, completed uncertainty-supported inversion analysis, H3 forward evaluation or H4 intervention was identified. H2, H3 and H4 remain undetermined; the new-run counters stay zero.
 
 Publication scope: copy all experiment code, configuration profiles, tests and setup documents; label the earlier starter legacy; include the small pilot records, checkpoint metadata, a full local artifact inventory with original byte hashes, and the research log. Raw datasets, model weights, feature arrays and Python caches remain in the original local folders rather than ordinary Git history. Public copies replace local account/server identifiers with placeholders; transformation records and both original/published source hashes make this explicit. The algorithms and numerical measurements are not changed. Repository publication is pending at this event; a verified commit is recorded afterward.
 
-### EVT-000004 — GitHub publication verified
+### EVT-000004 â€” GitHub publication verified
 
 Date recorded: 23 October 2026, Asia/Calcutta. Type: research infrastructure and preservation. No new scientific experiment or hypothesis analysis.
 
@@ -655,7 +663,7 @@ All 35 original version-2 manifest entries and all five historical documented so
 
 Verification is limited to source integrity, static Python syntax, JSON parsing, checked credential patterns and remote publication integrity. No dependency installation, unit-test rerun, H100 training, H2 inversion analysis, H3 forecast or H4 intervention occurred. Research conclusions and new-run counters remain unchanged. Future updates should preserve history, identify the exact code commit used by each run, and commit only reviewed new files and notebook changes. Publishing later raw artifacts requires an explicit storage/distribution plan.
 
-### Event template — append below without deleting earlier entries
+### Event template â€” append below without deleting earlier entries
 
     event_ID / event_type:
     occurred_at / received_at / recorded_at / timezone / time_precision:
@@ -697,3 +705,17 @@ The hypothesis-specific requirements above are a proposed research-record design
 | 1.3 | 2026-10-23 | Record verified public repository import, checksums and publication scope | No new experiment or hypothesis conclusion |
 
 End of initial record. Append subsequent events and run records while retaining this provenance.
+
+
+## Publication appendix â€” 28 October 2026
+
+The later v3/compact source and all currently available test evidence have now
+been added to the same repository. See [EXPERIMENT_RECORD_2026-10-27.md](EXPERIMENT_RECORD_2026-10-27.md)
+for successful GPU job identities, all final task accuracies, the derived LoRA
+BWT of -0.09375, the reported zero-eligible-reversal analysis, preserved failed
+local test attempts and the final 39-pass/two-skip compact suite. Sources and
+public transformations are recorded under [provenance/h2_20261028/](../provenance/h2_20261028/).
+
+This is a documentation/source publication. It is not a new training launch,
+full primary completion, proof of H2, or an H3/H4 result. Original H100 arrays,
+checkpoints, resolved configs and detailed geometry reports remain unreceived.

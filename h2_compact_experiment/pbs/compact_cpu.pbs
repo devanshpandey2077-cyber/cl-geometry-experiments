@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -N h2_compact_cpu
+#PBS -q cpuq
+#PBS -l select=1:ncpus=8:mem=32gb
+#PBS -l walltime=24:00:00
+#PBS -j oe
+H2_LOG_KIND="compact_${H2_ACTION:-pack}" H2_THREADS=8
+source "$PBS_O_WORKDIR/pbs/common.sh"
+export CUDA_VISIBLE_DEVICES=""
+export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_DATASETS_OFFLINE=1
+case "${H2_ACTION:-pack}" in pack|release|shared) ;; *) echo "Invalid compact action"; exit 2 ;; esac
+args=("${H2_ACTION:-pack}" --name "${H2_PLAN:?Missing plan}")
+if [[ "${H2_ACTION:-pack}" != shared ]]; then args+=(--run-id "${H2_RUN_ID:?Missing run ID}"); fi
+python compact.py "${args[@]}"

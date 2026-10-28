@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -N h2_v3_stats
+#PBS -q cpuq
+#PBS -l select=1:ncpus=4:mem=8gb
+#PBS -l walltime=02:00:00
+#PBS -j oe
+H2_LOG_KIND=statistics H2_THREADS=4
+source "$PBS_O_WORKDIR/pbs/common.sh"
+export CUDA_VISIBLE_DEVICES=""
+python validate_statistics.py --repetitions 100 --bootstrap 499

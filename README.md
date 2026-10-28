@@ -1,49 +1,119 @@
 # Continual-learning geometry experiments
 
-Research code and an evolving empirical notebook for task-affinity rank inversion, forward prediction of forgetting, and function-preserving geometry interventions.
+Research code and evidence for task-affinity rank inversion (H2), with H3/H4
+research questions retained separately.
 
-| Hypothesis | Question | Current implementation/evidence |
-|---|---|---|
-| H2 | Can the affinity ranking of task pairs reverse during sequential learning? | Version-2 measurement pipeline and historical small-pilot records; no confirmatory conclusion yet |
-| H3 | Does current geometry and its trajectory predict future forgetting better than static geometry? | Registered research question; forward evaluation is not implemented in these packages |
-| H4 | Can geometry changes preserving old-task function change subsequent forgetting? | Registered research question; intervention study is not implemented in these packages |
+**Latest evidence:** the v3 GPU smoke campaign completed and reported **zero
+eligible reversals at its declared resolution**. The full primary campaign has
+been planned, not demonstrated complete. The compact workflow has passing local
+fixture tests; H100 archive/acknowledgement/release validation is pending.
 
-## Repository contents
+Start with the [testing index](docs/TESTING_INDEX.md) and
+[27 October experiment record](docs/EXPERIMENT_RECORD_2026-10-27.md).
+
+## Source versions
 
 | Path | Purpose |
 |---|---|
-| [h2_full_experiment/](h2_full_experiment/) | Main H2 implementation: LoRA, fixed probes, grouped splits, controls, uncertainty analysis, configuration profiles and PBS jobs |
-| [h2_full_experiment/START_HERE.md](h2_full_experiment/START_HERE.md) | Cluster setup and small-pipeline instructions |
-| [h2_full_experiment/PROTOCOL.md](h2_full_experiment/PROTOCOL.md) | Measurement definitions, comparison families and interpretation limits |
-| [legacy/h2_llm_testbed/](legacy/h2_llm_testbed/) | Earlier starter implementation, retained for historical reproducibility |
-| [docs/H2_H3_H4_Research_Log.md](docs/H2_H3_H4_Research_Log.md) | Detailed notebook, hypothesis registry, run templates and historical readings |
-| [results/historical/h100_smoke_36125.master/](results/historical/h100_smoke_36125.master/) | Original small-pilot accuracy/configuration, saved source documentation and adapter metadata |
-| [provenance/](provenance/) | Original/published source hashes, transformation notes and full local artifact inventory |
+| [h2_compact_experiment/](h2_compact_experiment/) | Latest compact derivative: full analyses, verified archives, explicit release and disk guards |
+| [h2_compact_experiment/START_COMPACT.md](h2_compact_experiment/START_COMPACT.md) | Windows/server workflow; adapt account paths and read PUBLICATION.md first |
+| [h2_robust_experiment_v3/](h2_robust_experiment_v3/) | Original v3 delivery snapshot with suite builder, grouped data, repeated runs and joint analysis |
+| [h2_full_experiment/](h2_full_experiment/) | Previous version-2 source retained for history |
+| [legacy/h2_llm_testbed/](legacy/h2_llm_testbed/) | Earlier starter implementation |
 
-## Later v3 and compact workflow
+The public v3/compact copies generalize account paths and device identifiers.
+Each source folder has a regenerated SOURCE_MANIFEST.json and a PUBLICATION.md.
+Original delivery manifests and byte hashes are preserved in
+[provenance/h2_20261028/](provenance/h2_20261028/).
 
-Read [What the H2 v3 code does](docs/H2_V3_CODE_EXPLAINED.md) for the later pipeline's datasets, LoRA training, geometry and uncertainty analysis, reported smoke-test outcome, exact 158.7 GiB storage calculation, and compact archive tradeoffs. The executable source trees in this repository retain the previously published v2/legacy snapshots; the later v3/compact packages were delivered separately. This guide does not claim that the full primary campaign has run.
+These are the delivered source snapshots, not recovered exact copies of the
+manually patched H100 checkout. Build a **new** plan after customization; old
+frozen source identities will not match changed code.
 
-## Start here
+## Evidence and documentation
 
-Use the version-2 implementation for new H2 work. Read its [README](h2_full_experiment/README.md), [START_HERE](h2_full_experiment/START_HERE.md) and [protocol](h2_full_experiment/PROTOCOL.md) before launching jobs. Commands assume the working directory is h2_full_experiment. Customize the account, cache, Conda installation, PBS queues/resource requests and currently authorized GPU allocation for your cluster. YOUR_HPC_USER and YOUR_HPC_HOST are placeholders.
+| Material | Location |
+|---|---|
+| Complete code explanation | [docs/H2_V3_CODE_EXPLAINED.md](docs/H2_V3_CODE_EXPLAINED.md) |
+| Dated execution/development record | [docs/EXPERIMENT_RECORD_2026-10-27.md](docs/EXPERIMENT_RECORD_2026-10-27.md) |
+| Preserved GPU console and parsed metrics | [results/h2v3_smoke_r1/](results/h2v3_smoke_r1/) |
+| Local tests, including failed development attempts | [results/validation/](results/validation/) |
+| v3 synthetic instrument diagnostic | [JSON](h2_robust_experiment_v3/validation/synthetic_instrument_diagnostic.json) |
+| Historical research notebook | [docs/H2_H3_H4_Research_Log.md](docs/H2_H3_H4_Research_Log.md) |
+| Earlier pilot/source provenance | [results/historical/](results/historical/) and [provenance/](provenance/) |
 
-For the documented college workflow, setup, data preparation, training, feature extraction and substantial analysis run through PBS. The submission helper prints a plan unless --submit is supplied. Calibrate the environment and learning behavior before freezing any confirmation campaign. Dependency pins reproduce the supplied project configuration; successful installation on a new machine has not been verified during this repository import.
+The GPU attachment contains completed frozen, head-only and LoRA smoke runs,
+six stages each, with five tasks and validation/test metrics. The published
+JSON and CSV retain 180 visible task/stage/split rows. The final LoRA mean test
+accuracy is 51.0%; its derived backward transfer is -0.09375. These are small
+functionality readings, not confirmation of H2.
 
-The full profile proposes five tasks, three orders and five seeds, plus two controls. It is a proposed experiment, not a completed result. The historical starter uses different settings, pooling and checkpoint formats; do not combine its outputs with version-2 results as though they came from the same protocol.
+The supplied CPU terminal summary reports zero eligible reversals and zero
+repeated comparisons. Its transcription is labelled as such; native detailed
+geometry reports were not received. Missing raw artifacts are listed in the
+experiment record.
 
-## Historical pilot
+## Hypothesis status
 
-One reported H100 MIG pilot trained SST-2 -> QQP -> QNLI -> MNLI -> AG News. Its saved final task accuracies are 0.92, 0.74, 0.76, 0.68 and 0.70 on custom 50-example test sets. The unweighted final mean is 0.76. The complete saved post-task scores yield backward transfer -0.045 over the first four tasks. These are historical single-trajectory measurements, without seed uncertainty or completed inversion/control analysis. They do not establish H2, H3 or H4.
+| Hypothesis | Question | Status |
+|---|---|---|
+| H2 | Can task-pair representation-affinity rankings reverse during sequential learning? | Implemented; smoke has no eligible supporting reversals; full primary evidence pending |
+| H3 | Does geometry and its trajectory predict future forgetting better than static geometry? | Research question; forward prediction study not implemented here |
+| H4 | Can function-preserving geometry interventions change later forgetting? | Research question; intervention study not implemented here |
 
-## Data and large artifacts
+These observations establish neither a universal proof/disproof nor novelty or
+a causal forgetting mechanism.
 
-Raw dataset JSONL files, NumPy feature arrays, trained safetensors weights and generated caches stay outside ordinary Git history. Their original relative paths, byte counts and SHA256 hashes are in [local_artifact_inventory.json](provenance/local_artifact_inventory.json). These hashes identify local artifacts; they are not download links or evidence of an external backup. Small pilot records and checkpoint configurations are included.
+## Model, data and planned scale
 
-The larger legacy data/manifest.json is recorded separately from the small pilot's documentation/data_manifest.json. The supplied larger raw-data directory is not verified to reconstruct the exact historical pilot probes. Obtain the matching data_h100_smoke files before claiming that reconstruction.
+The current single-model primary selection is Qwen/Qwen3-1.7B with BF16 frozen
+base weights and FP32 rank-16 LoRA adapters on attention q/k/v/o projections.
+The five tasks are Yelp Polarity, QQP, QNLI, MNLI and AG News from Hugging Face.
+Custom grouped holdouts are selected from labelled source training splits.
 
-## Import validation
+For that plan: 20,000 training examples/task, two uncapped epochs, two sampled
+cohorts, ten training seeds and five task orders. That is 100 LoRA trajectories
+plus four controls. The 158.69140625 GiB estimate is the **uncompressed saved
+feature payload** across 104 runs, excluding caches/checkpoints/other outputs.
+It is not an already-produced result, a model size or a personal storage quota.
+See the code guide for the exact calculation and caveats.
 
-All 35 entries in the supplied version-2 source manifest matched their original bytes before import. Python syntax was checked for all 23 supplied code files. Candidate text files were scanned for common credential patterns. No dependency installation, unit-test rerun, GPU experiment or hypothesis analysis was performed during this import. See the existing package VALIDATION.md for earlier fixture-test evidence.
+## Running the current workflow
 
-Public copies replace local account/server identifiers with placeholders; training algorithms and numeric results are retained. The original source manifest and a publication transformation map preserve the distinction between original and public copies. Historical source-sha256.txt describes the original executed files.
+On the server, work in the appropriate source folder and use the existing
+working environment. Verify the public package before configuring a new plan:
+
+```bash
+cd cl-geometry-experiments/h2_compact_experiment
+python verify_package.py
+```
+
+Read PUBLICATION.md and START_COMPACT.md. If you cloned this repository, the
+source folder already exists: skip the guide's ZIP extraction steps. Customize
+YOUR_HPC_USER/account paths before building a plan. In the Windows archive
+client, pass --remote-python with the actual server environment's Python path.
+
+Use the suite/compact PBS entry points for the documented 32 GB-per-job account.
+Older v3 bootstrap/legacy scripts retain historical defaults, including some
+64 GB requests and environment cloning; they are not the recommended launch path.
+Do not create another environment or reinstall torch merely to publish or
+inspect the code.
+
+For the college workflow, preparation, training, feature extraction and
+substantial analysis run through PBS. Planning/submission/status commands are
+lightweight. Start with remote tests and a small engineering smoke cycle, then
+matching development calibration. A new storage implementation must be tested on
+the actual hardware before running the full primary matrix.
+
+## Publication scope
+
+The update preserves complete delivered source/test/documentation snapshots,
+available original local test logs, the supplied GPU console attachment,
+derived metrics, and a labelled transcription of the CPU analysis output.
+It also preserves earlier repository history.
+
+It does not claim to contain native H100 run configs, freeze receipts, complete
+per-job logs, trained checkpoints, probe/feature arrays or detailed geometry
+CSVs that were never received. Models, raw dataset caches, credentials and other
+users' GPU process rows are outside this public commit. Checksums identify
+original inputs and transformations; they are not external backups.

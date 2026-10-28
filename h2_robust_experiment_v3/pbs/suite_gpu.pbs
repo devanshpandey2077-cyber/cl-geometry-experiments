@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -N h2_v3_gpu
+#PBS -q workq
+#PBS -l select=1:ncpus=4:mem=64gb
+#PBS -l walltime=24:00:00
+#PBS -j oe
+H2_LOG_KIND=gpu H2_THREADS=4
+source "$PBS_O_WORKDIR/pbs/common.sh"
+if [[ -z "${CUDA_VISIBLE_DEVICES:-}" ]]; then export CUDA_VISIBLE_DEVICES="${MIG_UUID:-}"; fi
+export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_DATASETS_OFFLINE=1
+args=(run-one --name "${H2_PLAN:?Missing plan}" --run-id "${H2_RUN_ID:?Missing run ID}")
+if [[ "${H2_RESUME:-0}" == 1 ]]; then args+=(--resume); fi
+python suite.py "${args[@]}"
