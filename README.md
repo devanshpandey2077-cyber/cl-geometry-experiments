@@ -20,6 +20,10 @@ Research code and an evolving empirical notebook for task-affinity rank inversio
 | [results/historical/h100_smoke_36125.master/](results/historical/h100_smoke_36125.master/) | Original small-pilot accuracy/configuration, saved source documentation and adapter metadata |
 | [provenance/](provenance/) | Original/published source hashes, transformation notes and full local artifact inventory |
 
+## Later v3 and compact workflow
+
+Read [What the H2 v3 code does](docs/H2_V3_CODE_EXPLAINED.md) for the later pipeline's datasets, LoRA training, geometry and uncertainty analysis, reported smoke-test outcome, exact 158.7 GiB storage calculation, and compact archive tradeoffs. The executable source trees in this repository retain the previously published v2/legacy snapshots; the later v3/compact packages were delivered separately. This guide does not claim that the full primary campaign has run.
+
 ## Start here
 
 Use the version-2 implementation for new H2 work. Read its [README](h2_full_experiment/README.md), [START_HERE](h2_full_experiment/START_HERE.md) and [protocol](h2_full_experiment/PROTOCOL.md) before launching jobs. Commands assume the working directory is h2_full_experiment. Customize the account, cache, Conda installation, PBS queues/resource requests and currently authorized GPU allocation for your cluster. YOUR_HPC_USER and YOUR_HPC_HOST are placeholders.
